@@ -13,5 +13,12 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/services')
+def services():
+    with open('Data/services.json', 'r') as f:
+        data = json.load(f)
+    print(data)
+    return render_template('services_prod.html',service_data={"services":data,"type":"product_dev"})
+
 if __name__ == '__main__':
     app.run(debug=True)

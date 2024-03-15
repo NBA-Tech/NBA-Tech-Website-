@@ -1,60 +1,61 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Product Development || Notech || Notech HTML Template For It Solution </title>
-    <!-- favicons Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" />
-    <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
-    <meta name="description" content="Notech HTML Template For It Solution" />
-
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-
-    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
-    <link rel="stylesheet" href="assets/vendors/animate/custom-animate.css" />
-    <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
-    <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
-    <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
-    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
-    <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
-    <link rel="stylesheet" href="assets/vendors/odometer/odometer.min.css" />
-    <link rel="stylesheet" href="assets/vendors/swiper/swiper.min.css" />
-    <link rel="stylesheet" href="assets/vendors/notech-icons/style.css">
-    <link rel="stylesheet" href="assets/vendors/notech-two-icons/style.css">
-    <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.min.css" />
-    <link rel="stylesheet" href="assets/vendors/reey-font/stylesheet.css" />
-    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="assets/vendors/owl-carousel/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="assets/vendors/bxslider/jquery.bxslider.css" />
-    <link rel="stylesheet" href="assets/vendors/bootstrap-select/css/bootstrap-select.min.css" />
-    <link rel="stylesheet" href="assets/vendors/vegas/vegas.min.css" />
-    <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
-    <link rel="stylesheet" href="assets/vendors/timepicker/timePicker.css" />
-
-    <!-- template styles -->
-    <link rel="stylesheet" href="assets/css/notech.css" />
-    <link rel="stylesheet" href="assets/css/notech-responsive.css" />
-
-    <!-- modes css -->
-    <link rel="stylesheet" id="jssMode" href="assets/css/notech-light.css">
-
-
-    <!-- toolbar css -->
-    <link rel="stylesheet" href="assets/vendors/toolbar/css/toolbar.css">
-</head>
-
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>One Page || Home One || Notech || Notech HTML Template For It Solution </title>
+        <!-- favicons Icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='assets/images/logo.png') }}" />
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='assets/images/logo.png') }}" />
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/images/logo.png') }}" />
+        <link rel="manifest" href="{{ url_for('static', filename='assets/images/favicons/site.webmanifest') }}" />
+        <meta name="description" content="Notech HTML Template For It Solution" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    
+    
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/bootstrap/css/bootstrap.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/animate/animate.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/animate/custom-animate.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/fontawesome/css/all.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/jarallax/jarallax.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/nouislider/nouislider.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/nouislider/nouislider.pips.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/odometer/odometer.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/swiper/swiper.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/notech-icons/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/notech-two-icons/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/tiny-slider/tiny-slider.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/reey-font/stylesheet.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/owl-carousel/owl.carousel.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/owl-carousel/owl.theme.default.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/bxslider/jquery.bxslider.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/bootstrap-select/css/bootstrap-select.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/vegas/vegas.min.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/jquery-ui/jquery-ui.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/timepicker/timePicker.css') }}" />
+    
+        <!-- template styles -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/notech.css') }}" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/notech-responsive.css') }}" />
+    
+    
+        <!-- modes css -->
+        <link rel="stylesheet" id="jssMode" href="{{ url_for('static', filename='assets/css/notech-light.css') }}">
+    
+    
+        <!-- toolbar css -->
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/toolbar/css/toolbar.css') }}">
+    
+    </head>
 <body>
 
     <!-- style switcher -->
@@ -361,17 +362,16 @@
                                 <img src="assets/images/services/service-details-img-1.jpg" alt="">
                             </div>
                             <div class="service-details__content">
-                                <h3 class="service-details__content-title">Product development</h3>
-                                <p class="service-details__text-1">At NBA Tech Solutions, we believe in transforming your ideas into innovative digital solutions. Our Product Development Menu offers a range of services tailored to meet your unique needs, whether you're a startup looking to launch your first product or an established enterprise seeking to enhance your digital presence.</p>
+                                <h3 class="service-details__content-title">{{service_data["services"][service_data['type']]["title"]}}</h3>
+                                <p class="service-details__text-1">{{service_data["services"][service_data['type']]["description"]}}</p>
                                 <p class="service-details__text-2">Our Approach</p>
-                                <p class="service-details__text-3">We pride ourselves on our collaborative approach to product development. Our team of experienced developers, designers, and project managers work closely with you every step of the way to ensure your vision becomes a reality. From initial concept to final delivery, we prioritize communication, transparency, and quality to ensure your satisfaction.</p>
+                                <p class="service-details__text-3">{{service_data["services"][service_data['type']]["approach"]}}</p>
                                 <p class="service-details__text-2">Why Choose Us?</p>
                                 <p class="service-details__text-3">
-                                    <strong>Expertise: </strong>Our team comprises skilled professionals with diverse backgrounds and extensive experience in web development. <br>
-                                    <strong>Quality Assurance: </strong>We adhere to rigorous quality standards to ensure that every product we deliver meets or exceeds your expectations. <br>
-                                    <strong>Customer-Centric Approach: </strong>Your satisfaction is our priority. We listen to your needs, provide transparent communication, and adapt to your feedback throughout the development process. <br>
-                                    <strong>On-Time Delivery: </strong>We understand the importance of deadlines. We work diligently to deliver your project on time and within budget.</p>
-                            </div>
+                                    {% for i in service_data["services"][service_data['type']]["whyus"]  %}
+                                    {{i | safe}}
+                                    {% endfor %}
+                                    </div>
                             <!-- <ul class="list-unstyled service-details__points">
                                 <li>
                                     <div class="service-details__points-icon">
@@ -396,11 +396,13 @@
                                 </li>
                             </ul> -->
                             <div class="service-details__points-two">
+                                {% for i in range((service_data["services"][service_data['type']]["services"] | length)//2) %}
+                                
                                 <div class="row">
                                     <div class="col-xl-6">
                                         <div class="service-details__points-two-single">
                                             <div class="service-details__points-two-content">
-                                                <h4>Web Application Development</h4>
+                                                <h4>{{service_data["services"][service_data['type']]["services"]}}</h4>
                                                 <p>Transform your business processes with custom web applications tailored to your specific requirements. Our experts leverage cutting-edge technologies to deliver scalable, secure, and intuitive web solutions that drive growth and efficiency.</p>
                                             </div>
                                         </div>
@@ -414,100 +416,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="service-details__points-two-single">
-                                            <div class="service-details__points-two-content">
-                                                <h4>E-commerce Solutions</h4>
-                                                <p>Unlock new revenue streams and expand your online presence with our comprehensive e-commerce solutions. From storefront design to payment integration and inventory management, we empower businesses of all sizes to thrive in the digital marketplace.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="service-details__points-two-single">
-                                            <div class="service-details__points-two-content">
-                                                <h4> Product Strategy and Consulting</h4>
-                                                <p>Gain a competitive edge with strategic guidance from our experienced consultants. Whether you're launching a new product or seeking to optimize existing offerings, we provide actionable insights and industry expertise to drive success.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                {% endfor %}
+                                
                             </div>
-                            <div class="service-details__benefits">
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="service-details__benefits-img">
-                                            <img src="assets/images/services/service-details-benefits-img.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="service-details__benefits-right">
-                                            <h3 class="service-details__benefits-title">Get Started Today!</h3>
-                                            <p class="service-betails__benefits-text-1">Ready to bring your digital vision to life? Contact us today to schedule a consultation and discover how our product development services can help you achieve your goals. Let's embark on this journey together and build something extraordinary.</p>
-                                            <!-- <ul class="list-unstyled service-details__benefits-points">
-                                                <li>
-                                                    <div class="icon">
-                                                        <i class="icon-check"></i>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Praesent efficitur quam sit amet</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <i class="icon-check"></i>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Nunc cursus dolor id purus euismod</p>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="icon">
-                                                        <i class="icon-check"></i>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>Quisque tincidunt eros ac place viverra</p>
-                                                    </div>
-                                                </li>
-                                            </ul> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="service-details__faq">
-                                <div class="accrodion-grp faq-one-accrodion" data-grp-name="faq-one-accrodion-1">
-                                    <div class="accrodion">
-                                        <div class="accrodion-title">
-                                            <h4>What is a managed IT service provider?</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
-                                    <div class="accrodion active">
-                                        <div class="accrodion-title">
-                                            <h4>What are the benefits of IT consultant?</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
-                                    <div class="accrodion last-chiled">
-                                        <div class="accrodion-title">
-                                            <h4>What can you do if we hire a IT advisor for business?</h4>
-                                        </div>
-                                        <div class="accrodion-content">
-                                            <div class="inner">
-                                                <p>There are many variations of passages the majority have suffered alteration in some fo injected humour, or randomised words believable. Phasellus a rhoncus erat. Vivamus vel eros vitae est aliquet pellentesque vitae.</p>
-                                            </div><!-- /.inner -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
+                            
                         </div>
                     </div>
                 </div>
@@ -691,42 +604,40 @@
     </div>
     <!-- /.search-popup -->
 
-    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+	<a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
+	<script src="{{ url_for('static', filename='assets/vendors/jquery/jquery-3.6.0.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/jarallax/jarallax.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/jquery-validate/jquery.validate.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/nouislider/nouislider.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/odometer/odometer.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/swiper/swiper.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/tiny-slider/tiny-slider.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/wnumb/wNumb.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/wow/wow.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/isotope/isotope.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/countdown/countdown.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/owl-carousel/owl.carousel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/bxslider/jquery.bxslider.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/bootstrap-select/js/bootstrap-select.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/vegas/vegas.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/jquery-ui/jquery-ui.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/timepicker/timePicker.js') }}"></script>
+	
+	<!-- template js -->
+	<script src="{{ url_for('static', filename='assets/js/notech.js') }}"></script>
+	
+	<!-- toolbar js -->
+	<script src="{{ url_for('static', filename='assets/vendors/toolbar/js/js.cookie.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/toolbar/js/jQuery.style.switcher.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/toolbar/js/toolbar.js') }}"></script>
+	
 
-    <script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
-    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendors/jarallax/jarallax.min.js"></script>
-    <script src="assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"></script>
-    <script src="assets/vendors/jquery-appear/jquery.appear.min.js"></script>
-    <script src="assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"></script>
-    <script src="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="assets/vendors/jquery-validate/jquery.validate.min.js"></script>
-    <script src="assets/vendors/nouislider/nouislider.min.js"></script>
-    <script src="assets/vendors/odometer/odometer.min.js"></script>
-    <script src="assets/vendors/swiper/swiper.min.js"></script>
-    <script src="assets/vendors/tiny-slider/tiny-slider.min.js"></script>
-    <script src="assets/vendors/wnumb/wNumb.min.js"></script>
-    <script src="assets/vendors/wow/wow.js"></script>
-    <script src="assets/vendors/isotope/isotope.js"></script>
-    <script src="assets/vendors/countdown/countdown.min.js"></script>
-    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
-    <script src="assets/vendors/bxslider/jquery.bxslider.min.js"></script>
-    <script src="assets/vendors/bootstrap-select/js/bootstrap-select.min.js"></script>
-    <script src="assets/vendors/vegas/vegas.min.js"></script>
-    <script src="assets/vendors/jquery-ui/jquery-ui.js"></script>
-    <script src="assets/vendors/timepicker/timePicker.js"></script>
-
-
-
-
-    <!-- template js -->
-    <script src="assets/js/notech.js"></script>
-
-    <!-- toolbar js -->
-    <script src="assets/vendors/toolbar/js/js.cookie.min.js"></script>
-    <script src="assets/vendors/toolbar/js/jQuery.style.switcher.min.js"></script>
-    <script src="assets/vendors/toolbar/js/toolbar.js"></script>
 </body>
 
 </html>
