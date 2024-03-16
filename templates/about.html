@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About || Notech || Notech HTML Template For It Solution</title>
@@ -11,6 +11,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/images/favicons/favicon-16x16.png') }}">
     <link rel="manifest" href="{{ url_for('static', filename='assets/images/favicons/site.webmanifest') }}">
     <meta name="description" content="Notech HTML Template For It Solution">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/2.0.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,866 +54,907 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/toolbar/css/toolbar.css') }}">
 </head>
 
-  <body>
-   
+<body>
+
     <!-- end style switcher -->
 
     <div class="preloader">
-      <img class="preloader__image" width="200" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="" />
-    </div>
+    <img class="preloader__image" width="200" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="" />
+    </div> 
     <!-- /.preloader -->
     <div class="page-wrapper">
-      <header class="main-header clearfix">
-        <div class="main-header__top">
-          <div class="main-header__top-inner clearfix">
-            <div class="main-header__top-left">
-              <ul class="list-unstyled main-header__top-address">
-                <li>
-                  <div class="icon">
-                    <span class="icon-pin"></span>
-                  </div>
-                  <div class="text">
-                    <p>66 broklyn golden street line. New York</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="icon">
-                    <span class="icon-email"></span>
-                  </div>
-                  <div class="text">
-                    <p>
-                      <a href="mailto:needhelp@company.com"
-                        >needhelp@company.com</a
-                      >
-                    </p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="main-header__top-right">
-              <div class="main-header__top-right-content">
-                <ul class="list-unstyled main-header__top-right-menu">
-                  <li><a href="{{url_for('about')}}">About</a></li>
-                  <li><a href="{{url_for('contact')}}">Contact</a></li>
+        <header class="main-header clearfix">
+            <div class="main-header__top">
+            <div class="main-header__top-inner clearfix">
+                <div class="main-header__top-left">
+                <ul class="list-unstyled main-header__top-address">
+                    <li>
+                    <div class="icon">
+                        <i class="fa-solid fa-location-dot" style="color: #5536e8;"></i>
+                    </div>
+                    <div class="text">
+                        <p>Coimbatore</p>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope" style="color: #6653e8;"></i>
+                    </div>
+                    <div class="text">
+                        <p>
+                        <a href="mailto:needhelp@company.com"
+                            >needhelp@company.com</a
+                        >
+                        </p>
+                    </div>
+                    </li>
                 </ul>
-                <div class="main-header__top-right-social">
-                  <a href="#"><i class="fab fa-twitter"></i></a>
-                  <a href="#"><i class="fab fa-facebook"></i></a>
-                  <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                  <a href="#"><i class="fab fa-instagram"></i></a>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <nav class="main-menu clearfix">
-          <div class="main-menu__wrapper clearfix">
-            <div class="main-menu__left main-menu__left--two">
-              <div class="main-menu__logo">
-                <a href="{{url_for('index')}}">
-                  <img class="logo-dark" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="" width="135px" height="50px">
-								<img class="logo-light" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="">
-						
-                </a>
-              </div>
-              <div
-                class="main-menu__main-menu-box main-menu__main-menu-box--two"
-              >
-                <a href="#" class="mobile-nav__toggler"
-                  ><i class="fa fa-bars"></i
-                ></a>
-                <ul class="main-menu__list">
-                  <li class="dropdown megamenu">
-                    <a href="{{url_for('index')}}">Home</a>
-                  </li>
-                  <li class="dropdown">
-                    <a href="#">Services</a>
-                    <ul>
-                      <li><a href="{{url_for('services',type='product_development')}}">Product Development</a></li>
-                      <li><a href="{{url_for('services',type='ui_ux_dev')}}">UI/UX Development</a></li>
-                      <li><a href="{{url_for('services',type='software_dev')}}">Software Development</a></li>
-                      <li><a href="{{url_for('services',type='web_dev')}}">Web Development</a></li>
-                      <li><a href="{{url_for('services',type='mobile_app_dev')}}">Mobile Application</a></li>
-                      <li><a href="{{url_for('services',type='cloud_services')}}">Cloud Solutions</a></li>
-                      <li><a href="{{url_for('services',type='ai_ml')}}">Artificial Intelligence</a></li>
-                      <li><a href="{{url_for('services',type='it_consulting_strategy')}}">IT Consulting</a></li>
-                      <li><a href="{{url_for('services',type='database_management')}}">Database Management</a></li>
-                      <li><a href="{{url_for('services',type='erp_systems')}}">ERP System</a></li>
+                <div class="main-header__top-right">
+                <div class="main-header__top-right-content">
+                    <ul class="list-unstyled main-header__top-right-menu">
+                    <li><a href="{{url_for('about')}}">About</a></li>
+                    <li><a href="{{url_for('contact')}}">Contact</a></li>
                     </ul>
-                  </li>
-
-                  <li class="dropdown">
-                    <a href="{{url_for('about')}}">About</a>
-                   
-                  </li>
-                  <li class="dropdown">
-                    <a href="{{url_for('gallery')}}">Gallery</a>
-                  </li>
-                  <li><a href="{{url_for('contact')}}">Contact</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="main-menu__right">
-              <div class="main-menu__search-call">
-                <div class="main-menu__call">
-                  <div class="main-menu__call-icon">
-                    <img
-                      src="{{url_for('static',filename='assets/images/icon/main-menu-icon-comment.png')}}"
-                      alt=""
-                    />
-                  </div>
-                  <div class="main-menu__call-number">
-                    <p>Have any question?</p>
-                    <h5>
-                      <a href="tel:926668880000"
-                        ><span>Free</span> +98 (000)-9850</a
-                      >
-                    </h5>
-                  </div>
+                    <div class="main-header__top-right-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
-                <div class="main-menu__search-box">
-                  <a
-                    href="#"
-                    class="main-menu__search search-toggler icon-magnifying-glass"
-                  ></a>
                 </div>
-              </div>
             </div>
-          </div>
-        </nav>
-      </header>
+            </div>
+            <nav class="main-menu clearfix">
+            <div class="main-menu__wrapper clearfix">
+                <div class="main-menu__left main-menu__left--two">
+                <div class="main-menu__logo">
+                    <a href="{{url_for('index')}}">
+                    <img class="logo-dark" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="" width="135px" height="50px">
+                                    <img class="logo-light" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="">
+                            
+                    </a>
+                </div>
+                <div
+                    class="main-menu__main-menu-box main-menu__main-menu-box--two"
+                >
+                    <a href="#" class="mobile-nav__toggler"
+                    ><i class="fa fa-bars"></i
+                    ></a>
+                    <ul class="main-menu__list">
+                    <li class="dropdown megamenu">
+                        <a href="{{url_for('index')}}">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Services</a>
+                        <ul>
+                        <li><a href="{{url_for('services',type='product_development')}}">Product Development</a></li>
+                        <li><a href="{{url_for('services',type='ui_ux_dev')}}">UI/UX Development</a></li>
+                        <li><a href="{{url_for('services',type='software_dev')}}">Software Development</a></li>
+                        <li><a href="{{url_for('services',type='web_dev')}}">Web Development</a></li>
+                        <li><a href="{{url_for('services',type='mobile_app_dev')}}">Mobile Application</a></li>
+                        <li><a href="{{url_for('services',type='cloud_services')}}">Cloud Solutions</a></li>
+                        <li><a href="{{url_for('services',type='ai_ml')}}">Artificial Intelligence</a></li>
+                        <li><a href="{{url_for('services',type='it_consulting_strategy')}}">IT Consulting</a></li>
+                        <li><a href="{{url_for('services',type='database_management')}}">Database Management</a></li>
+                        <li><a href="{{url_for('services',type='erp_systems')}}">ERP System</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="dropdown">
+                        <a href="{{url_for('about')}}">About</a>
+                    
+                    </li>
+                    <li class="dropdown">
+                        <a href="{{url_for('gallery')}}">Gallery</a>
+                    </li>
+                    <li><a href="{{url_for('contact')}}">Contact</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="main-menu__right">
+                <div class="main-menu__search-call">
+                    <div class="main-menu__call">
+                    <div class="main-menu__call-icon">
+                        <img
+                        src="{{url_for('static',filename='assets/images/icon/main-menu-icon-comment.png')}}"
+                        alt=""
+                        />
+                    </div>
+                    <div class="main-menu__call-number">
+                        <p>Have any question?</p>
+                        <h5>
+                        <a href="tel:926668880000"
+                            ><span>Free</span> +98 (000)-9850</a
+                        >
+                        </h5>
+                    </div>
+                    </div>
+                    <div class="main-menu__search-box">
+                        <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #1b1525;"></i>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </nav>
+        </header>
 
-      <div class="stricky-header stricked-menu main-menu">
+    <div class="stricky-header stricked-menu main-menu">
         <div class="sticky-header__content"></div>
         <!-- /.sticky-header__content -->
-      </div>
-      <!-- /.stricky-header -->
+    </div>
+    <!-- /.stricky-header -->
 
-      <!--Page Header Start-->
-      <section class="page-header">
+    <!--Page Header Start-->
+    <section class="page-header">
         <div
-          class="page-header-bg"
-          style="
+        class="page-header-bg"
+        style="
             background-image: url(../static/assets/images/backgrounds/page-header-bg.webp);
-          "
+        "
         ></div>
         <div class="container">
-          <div class="page-header__inner">
+        <div class="page-header__inner">
             <ul class="thm-breadcrumb list-unstyled">
-              <li><a href="{{url_for('index')}}">Home</a></li>
-              <li><span>/</span></li>
-              <li class="active">About us</li>
+            <li><a href="{{url_for('index')}}">Home</a></li>
+            <li><span>/</span></li>
+            <li class="active">About us</li>
             </ul>
             <h2>About us</h2>
-          </div>
         </div>
-      </section>
-      <!--Page Header End-->
+        </div>
+    </section>
+    <!--Page Header End-->
 
-      <!--Delivering IT Start-->
-      <section class="delivering-it delivering-it-two">
+    <!--Delivering IT Start-->
+    <section class="delivering-it delivering-it-two">
         <div class="container">
-          <div class="delivering-it__bottom">
+        <div class="delivering-it__bottom">
             <div class="row">
-              <div
+            <div
                 class="col-xl-4 col-lg-4 wow fadeInUp"
                 data-wow-delay="100ms"
-              >
+            >
                 <!--Delivering IT Single-->
                 <div class="delivering-it__single">
-                  <div class="delivering-it__img">
+                <div class="delivering-it__img">
                     <img
-                      src="{{url_for('static',filename='assets/images/resources/luke-peters-B6JINerWMz0-unsplash.jpg')}}"
-                      alt=""
+                    src="{{url_for('static',filename='assets/images/resources/luke-peters-B6JINerWMz0-unsplash.jpg')}}"
+                    alt=""
                     />
-                  </div>
-                  <div class="delivering-it__content">
+                </div>
+                <div class="delivering-it__content">
                     <h5 class="delivering-it__content-title">
                         Essential software every business needs
                     </h5>
-                  </div>
                 </div>
-              </div>
-              <div
+                </div>
+            </div>
+            <div
                 class="col-xl-4 col-lg-4 wow fadeInUp"
                 data-wow-delay="200ms"
-              >
+            >
                 <!--Delivering IT Single-->
                 <div class="delivering-it__single">
-                  <div class="delivering-it__img">
+                <div class="delivering-it__img">
                     <img
-                      src="{{url_for('static',filename='assets/images/resources/manager-luxury-wear-business-people-working-their-new-project-classroom.jpg')}}"
-                      alt=""
+                    src="{{url_for('static',filename='assets/images/resources/manager-luxury-wear-business-people-working-their-new-project-classroom.jpg')}}"
+                    alt=""
                     />
-                  </div>
-                  <div class="delivering-it__content">
+                </div>
+                <div class="delivering-it__content">
                     <h5 class="delivering-it__content-title">
                         Assisting businesses with solutions
                     </h5>
-                  </div>
                 </div>
-              </div>
-              <div
+                </div>
+            </div>
+            <div
                 class="col-xl-4 col-lg-4 wow fadeInUp"
                 data-wow-delay="300ms"
-              >
+            >
                 <!--Delivering IT Single-->
                 <div class="delivering-it__single">
-                  <div class="delivering-it__img">
+                <div class="delivering-it__img">
                     <img
-                      src="{{url_for('static',filename='assets/images/resources/rpa-concept-with-blurry-hand-touching-screen.jpg')}}"
-                      alt=""
+                    src="{{url_for('static',filename='assets/images/resources/rpa-concept-with-blurry-hand-touching-screen.jpg')}}"
+                    alt=""
                     />
-                  </div>
-                  <div class="delivering-it__content">
+                </div>
+                <div class="delivering-it__content">
                     <h5 class="delivering-it__content-title">
                         Innovation is build our business forward
                     </h5>
-                  </div>
                 </div>
-              </div>
+                </div>
             </div>
-          </div>
+            </div>
         </div>
-      </section>
-      <!--Delivering IT End-->
+        </div>
+    </section>
+    <!--Delivering IT End-->
 
+<<<<<<< Updated upstream
   
       <!--Brand One End-->
+=======
+    <!--Brand One Start-->
+    <section class="brand-one">
+        <div class="container">
+        <h4 class="brand-one__title">The business partners</h4>
+        <div
+            class="thm-swiper__slider swiper-container"
+            data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
+                    "0": {
+                        "spaceBetween": 30,
+                        "slidesPerView": 2
+                    },
+                    "375": {
+                        "spaceBetween": 30,
+                        "slidesPerView": 2
+                    },
+                    "575": {
+                        "spaceBetween": 30,
+                        "slidesPerView": 3
+                    },
+                    "767": {
+                        "spaceBetween": 50,
+                        "slidesPerView": 4
+                    },
+                    "991": {
+                        "spaceBetween": 50,
+                        "slidesPerView": 5
+                    },
+                    "1199": {
+                        "spaceBetween": 100,
+                        "slidesPerView": 5
+                    }
+                }}'
+        >
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+            <img src="{{ url_for('static', filename='assets/images/brand/brand-1-1.png') }}" alt="">
+            </div><!-- /.swiper-slide -->
+            <div class="swiper-slide">
+            <img src="{{ url_for('static', filename='assets/images/brand/brand-1-2.png') }}" alt="">
+            </div><!-- /.swiper-slide -->
+            <div class="swiper-slide">
+            <img src="{{ url_for('static', filename='assets/images/brand/brand-1-3.png') }}" alt="">
+            </div><!-- /.swiper-slide -->
+            <div class="swiper-slide">
+            <img src="{{ url_for('static', filename='assets/images/brand/brand-1-4.png') }}" alt="">
+            </div><!-- /.swiper-slide -->
+            <div class="swiper-slide">
+            <img src="{{ url_for('static', filename='assets/images/brand/brand-1-5.png') }}" alt="">
+            </div><!-- /.swiper-slide -->
+            <div class="swiper-slide">
+            <img src="{{ url_for('static', filename='assets/images/brand/brand-1-1.png') }}" alt="">
+            </div><!-- /.swiper-slide -->
+            <div class="swiper-slide">
+            <img src="{{ url_for('static', filename='assets/images/brand/brand-1-2.png') }}" alt="">
+            </div><!-- /.swiper-slide -->
+            <div class="swiper-slide">
+            <img src="{{ url_for('static', filename='assets/images/brand/brand-1-3.png') }}" alt="">
+            </div><!-- /.swiper-slide -->
+            <div class="swiper-slide">
+            <img src="{{ url_for('static', filename='assets/images/brand/brand-1-4.png') }}" alt="">
+            </div><!-- /.swiper-slide -->
+            <div class="swiper-slide">
+            <img src="{{ url_for('static', filename='assets/images/brand/brand-1-5.png') }}" alt="">
+            </div><!-- /.swiper-slide -->
+        </div>
+        </div>
+        </div>
+    </section>
+    <!--Brand One End-->
+>>>>>>> Stashed changes
 
-      <!--Business From Start-->
-      <section class="business-from">
+    <!--Business From Start-->
+    <section class="business-from">
         <div class="business-from-bg-box">
-          <div
+        <div
             class="business-from-bg jarallax"
             data-jarallax
             data-speed="0.2"
             data-imgPosition="50% 0%"
             style="
-              background-image: url(../static/assets/images/backgrounds/business-from-bg.jpg);
+            background-image: url(../static/assets/images/backgrounds/business-from-bg.jpg);
             "
-          ></div>
+        ></div>
         </div>
         <div class="container">
-          <div class="business-from__inner text-center">
+        <div class="business-from__inner text-center">
             <p class="business-from__sub-title">Business from great idea to</p>
             <h2 class="business-from__title">launching</h2>
             <div class="business-from__btn-box">
-              <a href="{{url_for('contact')}}" class="business-from__btn thm-btn"
+            <a href="{{url_for('contact')}}" class="business-from__btn thm-btn"
                 >Contact us now</a
-              >
+            >
             </div>
-          </div>
         </div>
-      </section>
-      <!--Business From End-->
+        </div>
+    </section>
+    <!--Business From End-->
 
-      <!--Notech More Start-->
-      <section class="notech-more">
+    <!--Notech More Start-->
+    <section class="notech-more">
         <div class="container">
-          <div class="row">
+        <div class="row">
             <div class="col-xl-6">
-              <div class="notech-more__left">
+            <div class="notech-more__left">
                 <div class="section-title text-left">
-                  <div class="section-title__tagline-box">
+                <div class="section-title__tagline-box">
                     <span class="section-title__tagline">Stay protected</span>
                     <div class="section-title-shape">
-                      <img
+                    <img
                         src="{{ url_for('static', filename='assets/images/shapes/section-title-shape.png')}}"
                         alt=""
-                      />
+                    />
                     </div>
-                  </div>
-                  <h2 class="section-title__title">
+                </div>
+                <h2 class="section-title__title">
                     NBA Tech Solutions is more than tech company
-                  </h2>
+                </h2>
                 </div>
                 <p class="notech-more__text">
-                  We prioritizes user experience and scalability, empowering
-                  businesses to excel in the digital realm.
+                We prioritizes user experience and scalability, empowering
+                businesses to excel in the digital realm.
                 </p>
                 <ul class="list-unstyled notech-more__points">
-                  <li>
+                <li>
                     <div class="icon">
-                      <span class="icon-technology"></span>
+                        <i class="fa-solid fa-magnifying-glass-chart fa-2xl" style="color: #5536e8;"></i>
                     </div>
                     <h3 class="notech-more__title">Data innovations</h3>
                     <p class="notech-more__text-2">
-                      Revolutionizing creative solutions and pioneering data
-                      innovations.
+                    Revolutionizing creative solutions and pioneering data
+                    innovations.
                     </p>
-                  </li>
-                  <li>
+                </li>
+                <li>
                     <div class="icon">
-                      <span class="icon-stock-market"></span>
+                        <i class="fa-solid fa-arrow-trend-up fa-2xl" style="color: #5536e8;"></i>
                     </div>
                     <h3 class="notech-more__title">Business solutions</h3>
                     <p class="notech-more__text-2">
-                      Revolutionizing NextGen business solutions and data-driven
-                      technology.
+                    Revolutionizing NextGen business solutions and data-driven
+                    technology.
                     </p>
-                  </li>
+                </li>
                 </ul>
-              </div>
+            </div>
             </div>
             <div class="col-xl-6">
-              <div class="notech-more__right">
+            <div class="notech-more__right">
                 <div
-                  class="notech-more__img wow slideInRight"
-                  data-wow-delay="100ms"
-                  data-wow-duration="2500ms"
+                class="notech-more__img wow slideInRight"
+                data-wow-delay="100ms"
+                data-wow-duration="2500ms"
                 >
-                  <img
+                <img
                     src="{{ url_for('static', filename='assets/images/blog/notech-more-img-1 (2).webp')}}"
                     alt=""
-                  />
+                />
                 </div>
-              </div>
             </div>
-          </div>
+            </div>
         </div>
-      </section>
-      <!--Notech More End-->
+        </div>
+    </section>
+    <!--Notech More End-->
 
-      <!--Counter One Start-->
-      <section class="counter-one about-page__counter">
+    <!--Counter One Start-->
+    <section class="counter-one about-page__counter">
         <div
-          class="counter-one__bg"
-          style="
+        class="counter-one__bg"
+        style="
             background-image: url(../static/assets/images/backgrounds/funfact-bg-1-1.png);
-          "
+        "
         ></div>
         <!-- /.counter-one__bg -->
         <div class="container">
-          <div class="row">
+        <div class="row">
             <div class="col-xl-12">
             <ul class="list-unstyled counter-one__list">
-              <li class="counter-one__single wow fadeInUp" data-wow-delay="100ms">
+            <li class="counter-one__single wow fadeInUp" data-wow-delay="100ms">
                 <div class="counter-one__icon">
-                  <span class="icon-work"></span>
+                    <span class="fa-solid fa-briefcase"></span>
                 </div>
                 <h3 class="odometer" data-count="3">00</h3>
                 <span class="counter-one__plus">+</span>
                 <p class="counter-one__title">Years of experience</p>
                 <p class="counter-one__text">We at NBA Tech Solutions have gerat experience in resolving our client's needs</p>
-              </li>
-              <li class="counter-one__single wow fadeInUp" data-wow-delay="200ms">
+            </li>
+            <li class="counter-one__single wow fadeInUp" data-wow-delay="200ms">
                 <div class="counter-one__icon">
-                  <span class="icon-technical-support"></span>
+                    <span class="fas fa-laptop-code"></span>
                 </div>
                 <h3 class="odometer" data-count="227">00</h3>
                 <p class="counter-one__title">IT problems solved</p>
                 <p class="counter-one__text">We at NBA Tech Solutions have developed various softwares</p>
-              </li>
-              <li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
+            </li>
+            <li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
                 <div class="counter-one__icon">
-                  <span class="icon-like"></span>
+                    <span class="fa-solid fa-thumbs-up"></span>
                 </div>
                 <h3 class="odometer" data-count="64">00</h3>
                 <p class="counter-one__title">Satisfied clients</p>
                 <p class="counter-one__text">Our clients have given us good reviews for satisfying their needs</p>
-              </li>
-              <li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
+            </li>
+            <li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
                 <div class="counter-one__icon">
-                  <span class="icon-user"></span>
+                    <span class="fa fa-users"></span>
                 </div>
                 <h3 class="odometer" data-count="10">00</h3>
                 <span class="counter-one__plus">+</span>
                 <p class="counter-one__title">Pro team members</p>
                 <p class="counter-one__text">Our members work tirelessly to fulfil the client needs</p>
-              </li>
+            </li>
             </ul>
-          </div>
         </div>
-          </div>
         </div>
-      </section>
-      <!--Counter One End-->
+        </div>
+        </div>
+    </section>
+    <!--Counter One End-->
 
-      <!--Team One Start-->
-      <section class="team-one about-page-team">
+    <!--Team One Start-->
+    <section class="team-one about-page-team">
         <div class="container">
-          <div class="section-title text-center">
+        <div class="section-title text-center">
             <div class="section-title__tagline-box">
-              <span class="section-title__tagline">Meet the team</span>
-              <div class="section-title-shape">
+            <span class="section-title__tagline">Meet the team</span>
+            <div class="section-title-shape">
                 <img
-                  src="{{ url_for('static', filename='assets/images/shapes/section-title-shape.png')}}"
-                  alt=""
+                src="{{ url_for('static', filename='assets/images/shapes/section-title-shape.png')}}"
+                alt=""
                 />
-              </div>
+            </div>
             </div>
             <h2 class="section-title__title">Team members</h2>
-          </div>
-          <div class="row">
+        </div>
+        <div class="row">
             <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-              <!--Team One Single-->
-              <div class="team-one__single">
+            <!--Team One Single-->
+            <div class="team-one__single">
                 <div class="team-one__img">
+<<<<<<< Updated upstream
                   <img src="{{ url_for('static', filename='assets/images/team/ajay.jpg')}}" alt="" />
                   <ul class="list-unstyled team-one__social">
+=======
+                <img src="{{ url_for('static', filename='assets/images/team/team-1-1.jpg')}}" alt="" />
+                <ul class="list-unstyled team-one__social">
+>>>>>>> Stashed changes
                     <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                     </li>
-                  </ul>
+                </ul>
                 </div>
                 <div class="team-one__content-box">
-                  <div class="team-one__content">
+                <div class="team-one__content">
                     <div class="team-one-shape">
-                      <img
+                    <img
                         src="{{ url_for('static', filename='assets/images/shapes/team-one-shape.png')}}"
                         alt=""
-                      />
+                    />
                     </div>
                     <h4 class="team-one__name">
-                      <a href="team-details.html">Ajay</a>
+                    <a href="team-details.html">Ajay</a>
                     </h4>
                     <p class="team-one__title">Accountant</p>
-                  </div>
                 </div>
-              </div>
+                </div>
+            </div>
             </div>
             <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
-              <!--Team One Single-->
-              <div class="team-one__single">
+            <!--Team One Single-->
+            <div class="team-one__single">
                 <div class="team-one__img">
+<<<<<<< Updated upstream
                   <img src="{{ url_for('static', filename='assets/images/team/mithelesh.jpg')}}" alt="" />
                   <ul class="list-unstyled team-one__social">
+=======
+                <img src="{{ url_for('static', filename='assets/images/team/team-1-2.jpg')}}" alt="" />
+                <ul class="list-unstyled team-one__social">
+>>>>>>> Stashed changes
                     <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                     </li>
-                  </ul>
+                </ul>
                 </div>
                 <div class="team-one__content-box">
-                  <div class="team-one__content">
+                <div class="team-one__content">
                     <div class="team-one-shape">
-                      <img
+                    <img
                         src="{{ url_for('static', filename='assets/images/shapes/team-one-shape.png')}}"
                         alt=""
-                      />
+                    />
                     </div>
                     <h4 class="team-one__name">
-                      <a href="team-details.html">Mithelesh</a>
+                    <a href="team-details.html">Mithelesh</a>
                     </h4>
                     <p class="team-one__title">Co founder & CEO</p>
-                  </div>
                 </div>
-              </div>
+                </div>
+            </div>
             </div>
             <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-              <!--Team One Single-->
-              <div class="team-one__single">
+            <!--Team One Single-->
+            <div class="team-one__single">
                 <div class="team-one__img">
+<<<<<<< Updated upstream
                   <img src="{{ url_for('static', filename='assets/images/team/sanjai kumar.jpg')}}" alt="" />
                   <ul class="list-unstyled team-one__social">
+=======
+                <img src="{{ url_for('static', filename='assets/images/team/team-1-3.jpg')}}" alt="" />
+                <ul class="list-unstyled team-one__social">
+>>>>>>> Stashed changes
                     <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                     </li>
-                  </ul>
+                </ul>
                 </div>
                 <div class="team-one__content-box">
-                  <div class="team-one__content">
+                <div class="team-one__content">
                     <div class="team-one-shape">
-                      <img
+                    <img
                         src="{{ url_for('static', filename='assets/images/shapes/team-one-shape.png')}}"
                         alt=""
-                      />
+                    />
                     </div>
                     <h4 class="team-one__name">
-                      <a href="team-details.html">Sanjay Kumar</a>
+                    <a href="team-details.html">Sanjay Kumar</a>
                     </h4>
                     <p class="team-one__title">Senior assistant</p>
-                  </div>
                 </div>
-              </div>
+                </div>
+            </div>
             </div>
 
             <!-- four -->
             <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-              <!--Team One Single-->
-              <div class="team-one__single">
+            <!--Team One Single-->
+            <div class="team-one__single">
                 <div class="team-one__img">
+<<<<<<< Updated upstream
                   <img src="{{ url_for('static', filename='assets/images/team/hardika.jpg')}}" alt="" />
                   <ul class="list-unstyled team-one__social">
+=======
+                <img src="{{ url_for('static', filename='assets/images/team/team-1-3.jpg')}}" alt="" />
+                <ul class="list-unstyled team-one__social">
+>>>>>>> Stashed changes
                     <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                     </li>
-                  </ul>
+                </ul>
                 </div>
                 <div class="team-one__content-box">
-                  <div class="team-one__content">
+                <div class="team-one__content">
                     <div class="team-one-shape">
-                      <img
+                    <img
                         src="{{ url_for('static', filename='assets/images/shapes/team-one-shape.png')}}"
                         alt=""
-                      />
+                    />
                     </div>
                     <h4 class="team-one__name">
-                      <a href="team-details.html">Hardika</a>
+                    <a href="team-details.html">Hardika</a>
                     </h4>
                     <p class="team-one__title">Senior assistant</p>
-                  </div>
                 </div>
-              </div>
+                </div>
+            </div>
             </div>
 
             <!-- five -->
             <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-              <!--Team One Single-->
-              <div class="team-one__single">
+            <!--Team One Single-->
+            <div class="team-one__single">
                 <div class="team-one__img">
+<<<<<<< Updated upstream
                   <img src="{{ url_for('static', filename='assets/images/team/santhosh kumar.jpg')}}" alt="" />
                   <ul class="list-unstyled team-one__social">
+=======
+                <img src="{{ url_for('static', filename='assets/images/team/team-1-3.jpg')}}" alt="" />
+                <ul class="list-unstyled team-one__social">
+>>>>>>> Stashed changes
                     <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                     </li>
-                  </ul>
+                </ul>
                 </div>
                 <div class="team-one__content-box">
-                  <div class="team-one__content">
+                <div class="team-one__content">
                     <div class="team-one-shape">
-                      <img
+                    <img
                         src="{{ url_for('static', filename='assets/images/shapes/team-one-shape.png')}}"
                         alt=""
-                      />
+                    />
                     </div>
                     <h4 class="team-one__name">
-                      <a href="team-details.html">Santhosh Kumar</a>
+                    <a href="team-details.html">Santhosh Kumar</a>
                     </h4>
                     <p class="team-one__title">Senior assistant</p>
-                  </div>
                 </div>
-              </div>
+                </div>
+            </div>
             </div>
 
             <!-- six -->
             <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-              <!--Team One Single-->
-              <div class="team-one__single">
+            <!--Team One Single-->
+            <div class="team-one__single">
                 <div class="team-one__img">
+<<<<<<< Updated upstream
                   <img src="{{ url_for('static', filename='assets/images/team/gowshickh.jpg')}}" alt="" />
                   <ul class="list-unstyled team-one__social">
+=======
+                <img src="{{ url_for('static', filename='assets/images/team/team-1-3.jpg')}}" alt="" />
+                <ul class="list-unstyled team-one__social">
+>>>>>>> Stashed changes
                     <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
                     </li>
                     <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                     </li>
-                  </ul>
+                </ul>
                 </div>
                 <div class="team-one__content-box">
-                  <div class="team-one__content">
+                <div class="team-one__content">
                     <div class="team-one-shape">
-                      <img
+                    <img
                         src="{{ url_for('static', filename='assets/images/shapes/team-one-shape.png')}}"
                         alt=""
-                      />
+                    />
                     </div>
                     <h4 class="team-one__name">
-                      <a href="team-details.html">Gowshick</a>
+                    <a href="team-details.html">Gowshick</a>
                     </h4>
                     <p class="team-one__title">Senior assistant</p>
-                  </div>
                 </div>
-              </div>
+                </div>
             </div>
-          </div>
+            </div>
         </div>
-      </section>
-      <!--Team One End-->
+        </div>
+    </section>
+    <!--Team One End-->
 
-      <!--Site Footer Start-->
-      <footer class="site-footer">
-        <div
-          class="site-footer-bg-1 wow slideInLeft"
-          data-wow-delay="100ms"
-          data-wow-duration="2500ms"
-          style="
-            background-image: url(../static/assets/images/shapes/site-footer-shape-1.png);
-          "
-        ></div>
-        <div
-          class="site-footer-bg-2 wow slideInRight"
-          data-wow-delay="100ms"
-          data-wow-duration="2500ms"
-          style="
-            background-image: url(../static/assets/images/shapes/site-footer-shape-2.png);
-          "
-        ></div>
+    <!--Site Footer Start-->
+    <footer class="site-footer">
+        <div class="site-footer-bg-1 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms"
+            style="background-image: url(../static/assets/images/shapes/site-footer-shape-1.png);">
+        </div>
+        <div class="site-footer-bg-2 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms"
+            style="background-image: url(../static/assets/images/shapes/site-footer-shape-2.png);">
+        </div>
         <div class="site-footer__top">
-          <div class="container">
-            <div class="site-footer__top-inner">
-              <div class="site-footer__top-left">
-                <div class="site-footer__top-icon">
-                  <span class="icon-artificial-intelligence"></span>
+            <div class="container">
+                <div class="site-footer__top-inner">
+                    <div class="site-footer__top-left">
+                        <div class="site-footer__top-icon">
+                            <span class="fas fa-robot"></span>
+                        </div>
+                        <h3 class="site-footer__top-title">Helping you run your bussiness seamlessly</h3>
+                    </div>
+                    <div class="site-footer__top-right">
+                        <a href="about.html" class="thm-btn site-footer__btn">Discover more</a>
+                    </div>
                 </div>
-                <h3 class="site-footer__top-title">
-                  Helping you overcome your technology challenges
-                </h3>
-              </div>
-              <div class="site-footer__top-right">
-                <a href="about.html" class="thm-btn site-footer__btn"
-                  >Discover more</a
-                >
-              </div>
             </div>
-          </div>
         </div>
         <div class="site-footer__middle">
-          <div class="container">
-            <div class="row">
-              <div
-                class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="100ms"
-              >
-                <div class="footer-widget__column footer-widget__about">
-                  <div class="footer-widget__logo">
-                    <a href="{{url_for('index')}}"
-                      ><img
-                        src="{{ url_for('static', filename='assets/images/resources/footer-logo.png')}}"
-                        alt=""
-                    /></a>
-                  </div>
-                  <div class="footer-widget__about-text-box">
-                    <p class="footer-widget__about-text">
-                      Subsrcibe for our upcoming latest articles and news
-                      resources
-                    </p>
-                  </div>
-                  <form class="footer-widget__newsletter-form">
-                    <div class="footer-widget__newsletter-input-box">
-                      <input
-                        type="email"
-                        placeholder="Email address"
-                        name="email"
-                      />
-                      <button
-                        type="submit"
-                        class="footer-widget__newsletter-btn"
-                      >
-                        <img
-                          src="{{ url_for('static', filename='assets/images/icon/footer-widget-newsletter-send-icon.png')}}"
-                          alt=""
-                        />
-                      </button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                        <div class="footer-widget__column footer-widget__about">
+                            <div class="footer-widget__logo">
+                                <a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='assets/images/resources/footer-logo.png')}}" alt=""></a>
+                            </div>
+                            <div class="footer-widget__about-text-box">
+                                <p class="footer-widget__about-text">Log on to get access to our Websites and Softwares</p>
+                            </div>
+                            <form class="footer-widget__newsletter-form">
+                                <div class="footer-widget__newsletter-input-box">
+                                    <input type="email" placeholder="Email address" name="email">
+                                    <button type="submit" class="footer-widget__newsletter-btn"><img
+                                            src="{{ url_for('static', filename='assets/images/icon/footer-widget-newsletter-send-icon.png')}}"
+                                            alt=""></button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                  </form>
+                    <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                        <div class="footer-widget__column footer-widget__links clearfix">
+                            <h3 class="footer-widget__title">Links</h3>
+                            <ul class="footer-widget__links-list list-unstyled clearfix">
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="team.html">Meet our team</a></li>
+                                <li><a href="blog.html">News & media</a></li>
+                                <li><a href="projects-page-1.html">Our projects</a></li>
+                                <li><a href="{{url_for('contact')}}">Contacts</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                        <div class="footer-widget__column footer-widget__contact clearfix">
+                            <h3 class="footer-widget__title">Contact</h3>
+                            <ul class="footer-widget__contact-list list-unstyled clearfix">
+                                <li>
+                                    <div class="icon">
+                                        <span class="fas fa-phone"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p><a href="tel:980009850">+91 98765-43210</a></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span class=" fas fa-envelope"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p><a href="mailto:needhelp@company.com">info@nbatechsolutions.in</a></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <span class="fas fa-map-marker-alt"></span>
+                                    </div>
+                                    <div class="text">
+                                        <p>Coimbatore <br>Tamil Nadu</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                        <div class="footer-widget__column footer-widget__social-box clearfix">
+                            <div class="site-footer__social">
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div
-                class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="200ms"
-              >
-                <div
-                  class="footer-widget__column footer-widget__links clearfix"
-                >
-                  <h3 class="footer-widget__title">Links</h3>
-                  <ul class="footer-widget__links-list list-unstyled clearfix">
-                    <li><a href="about.html">About us</a></li>
-                    <li><a href="team.html">Meet our team</a></li>
-                    <li><a href="blog.html">News & media</a></li>
-                    <li><a href="projects-page-1.html">Our projects</a></li>
-                    <li><a href="{{url_for('contact')}}">Contacts</a></li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="300ms"
-              >
-                <div
-                  class="footer-widget__column footer-widget__contact clearfix"
-                >
-                  <h3 class="footer-widget__title">Contact</h3>
-                  <ul
-                    class="footer-widget__contact-list list-unstyled clearfix"
-                  >
-                    <li>
-                      <div class="icon">
-                        <span class="icon-telephone"></span>
-                      </div>
-                      <div class="text">
-                        <p><a href="tel:980009850">+98 (000)-9850</a></p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="icon">
-                        <span class="icon-email"></span>
-                      </div>
-                      <div class="text">
-                        <p>
-                          <a href="mailto:needhelp@company.com"
-                            >needhelp@company.com</a
-                          >
-                        </p>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="icon">
-                        <span class="icon-pin"></span>
-                      </div>
-                      <div class="text">
-                        <p>
-                          66 broklyn golden street line <br />
-                          new york
-                        </p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div
-                class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp"
-                data-wow-delay="400ms"
-              >
-                <div
-                  class="footer-widget__column footer-widget__social-box clearfix"
-                >
-                  <div class="site-footer__social">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
         <div class="site-footer__bottom">
-          <div class="container">
-            <div class="row">
-              <div class="col-xl-12">
-                <div class="site-footer__bottom-inner">
-                  <p class="site-footer__bottom-text">
-                    © All Copyright 2022 by <a href="#">Layerdrops.com</a>
-                  </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="site-footer__bottom-inner">
+                            <p class="site-footer__bottom-text">© All Copyright 2024 by <a
+                                    href="#">NBA Tech Solutions</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </footer>
-      <!--Site Footer End-->
+    </footer>
+    <!--Site Footer End-->
     </div>
     <!-- /.page-wrapper -->
 
     <div class="mobile-nav__wrapper">
-      <div class="mobile-nav__overlay mobile-nav__toggler"></div>
-      <!-- /.mobile-nav__overlay -->
-      <div class="mobile-nav__content">
+    <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+    <!-- /.mobile-nav__overlay -->
+    <div class="mobile-nav__content">
         <span class="mobile-nav__close mobile-nav__toggler"
-          ><i class="fa fa-times"></i
+        ><i class="fa fa-times"></i
         ></span>
 
         <div class="logo-box">
-          <a href="{{url_for('index')}}" aria-label="logo image"
+        <a href="{{url_for('index')}}" aria-label="logo image"
             ><img
-              src="{{ url_for('static', filename='assets/images/resources/footer-logo.png')}}"
-              width="155"
-              alt=""
-          /></a>
+            src="{{ url_for('static', filename='assets/images/resources/footer-logo.png')}}"
+            width="155"
+            alt=""
+        /></a>
         </div>
         <!-- /.logo-box -->
         <div class="mobile-nav__container"></div>
         <!-- /.mobile-nav__container -->
 
         <ul class="mobile-nav__contact list-unstyled">
-          <li>
+        <li>
             <i class="fa fa-envelope"></i>
             <a href="mailto:needhelp@packageName__.com">needhelp@notech.com</a>
-          </li>
-          <li>
+        </li>
+        <li>
             <i class="fa fa-phone-alt"></i>
             <a href="tel:666-888-0000">666 888 0000</a>
-          </li>
+        </li>
         </ul>
         <!-- /.mobile-nav__contact -->
         <div class="mobile-nav__top">
-          <div class="mobile-nav__social">
+        <div class="mobile-nav__social">
             <a href="#" class="fab fa-twitter"></a>
             <a href="#" class="fab fa-facebook-square"></a>
             <a href="#" class="fab fa-pinterest-p"></a>
             <a href="#" class="fab fa-instagram"></a>
-          </div>
-          <!-- /.mobile-nav__social -->
+        </div>
+        <!-- /.mobile-nav__social -->
         </div>
         <!-- /.mobile-nav__top -->
-      </div>
-      <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__content -->
     </div>
     <!-- /.mobile-nav__wrapper -->
 
     <div class="search-popup">
-      <div class="search-popup__overlay search-toggler"></div>
-      <!-- /.search-popup__overlay -->
-      <div class="search-popup__content">
+    <div class="search-popup__overlay search-toggler"></div>
+    <!-- /.search-popup__overlay -->
+    <div class="search-popup__content">
         <form action="#">
-          <label for="search" class="sr-only">search here</label
-          ><!-- /.sr-only -->
-          <input type="text" id="search" placeholder="Search Here..." />
-          <button type="submit" aria-label="search submit" class="thm-btn">
+        <label for="search" class="sr-only">search here</label
+        ><!-- /.sr-only -->
+        <input type="text" id="search" placeholder="Search Here..." />
+        <button type="submit" aria-label="search submit" class="thm-btn">
             <i class="icon-magnifying-glass"></i>
-          </button>
+        </button>
         </form>
-      </div>
-      <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup__content -->
     </div>
     <!-- /.search-popup -->
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"></a>
-      <i class="fa fa-angle-up"></i
+    <i class="fa fa-angle-up"></i
     ></a>
     <script src="{{ url_for('static', filename='assets/vendors/jquery/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ url_for('static', filename='assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
@@ -942,5 +987,5 @@
     <script src="{{ url_for('static', filename='assets/vendors/toolbar/js/jQuery.style.switcher.min.js') }}"></script>
     <script src="{{ url_for('static', filename='assets/vendors/toolbar/js/toolbar.js') }}"></script>
     
-  </body>
+</body>
 </html>

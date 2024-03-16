@@ -64,15 +64,15 @@
 <body>
 
     <!-- style switcher -->
-    <div class="style-switcher">
+    <!-- <div class="style-switcher">
         <a href="#" id="switcher-toggler"><i class="fa fa-cog"></i></a>
         <h3>Layout Options</h3>
         <div class="layout-feature" id="colorMode">
             <a href="" class="dark-switcher" data-theme="notech-dark">Dark</a>
             <a href="" class="light-switcher" data-theme="notech-light">Light</a>
-            <button class="boxed-switcher">Boxed</button><!-- /.ltr-switcher -->
-        </div><!-- /.language-feature -->
-    </div>
+            <button class="boxed-switcher">Boxed</button>/.ltr-switcher
+        </div>/.language-feature
+    </div> -->
     <!-- end style switcher -->
 
     <div class="preloader">
@@ -82,119 +82,119 @@
     <div class="page-wrapper">
         <header class="main-header clearfix">
             <div class="main-header__top">
-                <div class="main-header__top-inner clearfix">
-                    <div class="main-header__top-left">
-                        <ul class="list-unstyled main-header__top-address">
-                            <li>
-                                <div class="icon">
-                                    <span class="icon-pin"></span>
-                                </div>
-                                <div class="text">
-                                    <p>66 broklyn golden street line. New York</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <span class="icon-email"></span>
-                                </div>
-                                <div class="text">
-                                    <p><a href="mailto:needhelp@company.com">needhelp@company.com</a></p>
-                                </div>
-                            </li>
-                        </ul>
+            <div class="main-header__top-inner clearfix">
+                <div class="main-header__top-left">
+                <ul class="list-unstyled main-header__top-address">
+                    <li>
+                    <div class="icon">
+                        <i class="fa-solid fa-location-dot" style="color: #5536e8;"></i>
                     </div>
-                    <div class="main-header__top-right">
-                        <div class="main-header__top-right-content">
-                            <ul class="list-unstyled main-header__top-right-menu">
-                                <li><a href="{{url_for('about')}}">About</a></li>
-                                <li><a href="#">Leadership</a></li>
-                                <a href="{{url_for('contact')}}">Contact</a>
-                            </ul>
-                            <div class="main-header__top-right-social">
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-facebook"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
+                    <div class="text">
+                        <p>66 broklyn golden street line. New York</p>
                     </div>
+                    </li>
+                    <li>
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope" style="color: #6653e8;"></i>
+                    </div>
+                    <div class="text">
+                        <p>
+                        <a href="mailto:needhelp@company.com"
+                            >needhelp@company.com</a
+                        >
+                        </p>
+                    </div>
+                    </li>
+                </ul>
+                </div>
+                <div class="main-header__top-right">
+                <div class="main-header__top-right-content">
+                    <ul class="list-unstyled main-header__top-right-menu">
+                    <li><a href="{{url_for('about')}}">About</a></li>
+                    <li><a href="{{url_for('contact')}}">Contact</a></li>
+                    </ul>
+                    <div class="main-header__top-right-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
                 </div>
             </div>
+            </div>
             <nav class="main-menu clearfix">
-                <div class="main-menu__wrapper clearfix">
-                  <div class="main-menu__left main-menu__left--two">
-                    <div class="main-menu__logo">
-                      <a href="{{url_for('index')}}">
-                        <img class="logo-dark" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="" width="135px" height="50px">
-                                      <img class="logo-light" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="">
-                              
-                      </a>
-                    </div>
-                    <div
-                      class="main-menu__main-menu-box main-menu__main-menu-box--two"
-                    >
-                      <a href="#" class="mobile-nav__toggler"
-                        ><i class="fa fa-bars"></i
-                      ></a>
-                      <ul class="main-menu__list">
-                        <li class="dropdown megamenu">
-                          <a href="{{url_for('index')}}">Home</a>
-                        </li>
-                        <li class="dropdown">
-                          <a href="#">Services</a>
-                          <ul>
-                            <li><a href="{{url_for('services',type='product_development')}}">Product Development</a></li>
-                            <li><a href="{{url_for('services',type='ui_ux_dev')}}">UI/UX Development</a></li>
-                            <li><a href="{{url_for('services',type='software_dev')}}">Software Development</a></li>
-                            <li><a href="{{url_for('services',type='web_dev')}}">Web Development</a></li>
-                            <li><a href="{{url_for('services',type='mobile_app_dev')}}">Mobile Application</a></li>
-                            <li><a href="{{url_for('services',type='cloud_services')}}">Cloud Solutions</a></li>
-                            <li><a href="{{url_for('services',type='ai_ml')}}">Artificial Intelligence</a></li>
-                            <li><a href="{{url_for('services',type='it_consulting_strategy')}}">IT Consulting</a></li>
-                            <li><a href="{{url_for('services',type='database_management')}}">Database Management</a></li>
-                            <li><a href="{{url_for('services',type='erp_systems')}}">ERP System</a></li>
-                          </ul>
-                        </li>
-      
-                        <li class="dropdown">
-                          <a href="{{url_for('about')}}">About</a>
-                         
-                        </li>
-                        <li class="dropdown">
-                          <a href="{{url_for('gallery')}}">Gallery</a>
-                        </li>
-                        <li><a href="{{url_for('contact')}}">Contact</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="main-menu__right">
-                    <div class="main-menu__search-call">
-                      <div class="main-menu__call">
-                        <div class="main-menu__call-icon">
-                          <img
-                            src="{{url_for('static',filename='assets/images/icon/main-menu-icon-comment.png')}}"
-                            alt=""
-                          />
-                        </div>
-                        <div class="main-menu__call-number">
-                          <p>Have any question?</p>
-                          <h5>
-                            <a href="tel:926668880000"
-                              ><span>Free</span> +98 (000)-9850</a
-                            >
-                          </h5>
-                        </div>
-                      </div>
-                      <div class="main-menu__search-box">
-                        <a
-                          href="#"
-                          class="main-menu__search search-toggler icon-magnifying-glass"
-                        ></a>
-                      </div>
-                    </div>
-                  </div>
+            <div class="main-menu__wrapper clearfix">
+                <div class="main-menu__left main-menu__left--two">
+                <div class="main-menu__logo">
+                    <a href="{{url_for('index')}}">
+                    <img class="logo-dark" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="" width="135px" height="50px">
+                                    <img class="logo-light" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="">
+                            
+                    </a>
                 </div>
-              </nav>
+                <div
+                    class="main-menu__main-menu-box main-menu__main-menu-box--two"
+                >
+                    <a href="#" class="mobile-nav__toggler"
+                    ><i class="fa fa-bars"></i
+                    ></a>
+                    <ul class="main-menu__list">
+                    <li class="dropdown megamenu">
+                        <a href="{{url_for('index')}}">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Services</a>
+                        <ul>
+                        <li><a href="{{url_for('services',type='product_development')}}">Product Development</a></li>
+                        <li><a href="{{url_for('services',type='ui_ux_dev')}}">UI/UX Development</a></li>
+                        <li><a href="{{url_for('services',type='software_dev')}}">Software Development</a></li>
+                        <li><a href="{{url_for('services',type='web_dev')}}">Web Development</a></li>
+                        <li><a href="{{url_for('services',type='mobile_app_dev')}}">Mobile Application</a></li>
+                        <li><a href="{{url_for('services',type='cloud_services')}}">Cloud Solutions</a></li>
+                        <li><a href="{{url_for('services',type='ai_ml')}}">Artificial Intelligence</a></li>
+                        <li><a href="{{url_for('services',type='it_consulting_strategy')}}">IT Consulting</a></li>
+                        <li><a href="{{url_for('services',type='database_management')}}">Database Management</a></li>
+                        <li><a href="{{url_for('services',type='erp_systems')}}">ERP System</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="dropdown">
+                        <a href="{{url_for('about')}}">About</a>
+                    
+                    </li>
+                    <li class="dropdown">
+                        <a href="{{url_for('gallery')}}">Gallery</a>
+                    </li>
+                    <li><a href="{{url_for('contact')}}">Contact</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="main-menu__right">
+                <div class="main-menu__search-call">
+                    <div class="main-menu__call">
+                    <div class="main-menu__call-icon">
+                        <img
+                        src="{{url_for('static',filename='assets/images/icon/main-menu-icon-comment.png')}}"
+                        alt=""
+                        />
+                    </div>
+                    <div class="main-menu__call-number">
+                        <p>Have any question?</p>
+                        <h5>
+                        <a href="tel:926668880000"
+                            ><span>Free</span> +98 (000)-9850</a
+                        >
+                        </h5>
+                    </div>
+                    </div>
+                    <div class="main-menu__search-box">
+                        <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #1b1525;"></i>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </nav>
         </header>
 
         <div class="stricky-header stricked-menu main-menu">
@@ -228,7 +228,7 @@
                         <!--Gallery Page Single-->
                         <div class="gallery-page__single">
                             <div class="gallery-page__img">
-                                <img src="{{url_for('static',filename=j)}}" width="550" height="300" alt="">
+                                <img src="{{url_for('static',filename=j)}}" width="100" height="200" style="object-fit: contain;"  alt="">
                                 <div class="gallery-page__icon">
                                     <a class="img-popup" href="{{url_for('static',filename=j)}}"><i class="fa-solid fa-plus fa-xl" style="color: #6653e8;"></i></a>
                                 </div>
@@ -245,119 +245,118 @@
 
         <!--Site Footer Start-->
         <footer class="site-footer">
-            <div class="site-footer-bg-1 wow slideInLeft" data-wow-delay="100ms"
-            data-wow-duration="2500ms" style="background-image: url(assets/images/shapes/site-footer-shape-1.png);">
-            </div>
-            <div class="site-footer-bg-2 wow slideInRight" data-wow-delay="100ms"
-            data-wow-duration="2500ms" style="background-image: url(assets/images/shapes/site-footer-shape-2.png);">
-            </div>
-            <div class="site-footer__top">
-                <div class="container">
-                    <div class="site-footer__top-inner">
-                        <div class="site-footer__top-left">
-                            <div class="site-footer__top-icon">
-                                <span class="icon-artificial-intelligence"></span>
-                            </div>
-                            <h3 class="site-footer__top-title">Helping you overcome your technology challenges</h3>
-                        </div>
-                        <div class="site-footer__top-right">
-                            <a href="about.html" class="thm-btn site-footer__btn">Discover more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="site-footer__middle">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                            <div class="footer-widget__column footer-widget__about">
-                                <div class="footer-widget__logo">
-                                    <a href="index.html"><img src="assets/images/resources/footer-logo.png" alt=""></a>
-                                </div>
-                                <div class="footer-widget__about-text-box">
-                                    <p class="footer-widget__about-text">Subsrcibe for our upcoming latest articles and
-                                        news resources</p>
-                                </div>
-                                <form class="footer-widget__newsletter-form">
-                                    <div class="footer-widget__newsletter-input-box">
-                                        <input type="email" placeholder="Email address" name="email">
-                                        <button type="submit" class="footer-widget__newsletter-btn"><img
-                                                src="assets/images/icon/footer-widget-newsletter-send-icon.png"
-                                                alt=""></button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                            <div class="footer-widget__column footer-widget__links clearfix">
-                                <h3 class="footer-widget__title">Links</h3>
-                                <ul class="footer-widget__links-list list-unstyled clearfix">
-                                    <li><a href="about.html">About us</a></li>
-                                    <li><a href="team.html">Meet our team</a></li>
-                                    <li><a href="blog.html">News & media</a></li>
-                                    <li><a href="projects-page-1.html">Our projects</a></li>
-                                    <li><a href="{{url_for('contact')}}">Contacts</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                            <div class="footer-widget__column footer-widget__contact clearfix">
-                                <h3 class="footer-widget__title">Contact</h3>
-                                <ul class="footer-widget__contact-list list-unstyled clearfix">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-telephone"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="tel:980009850">+98 (000)-9850</a></p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-email"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="mailto:needhelp@company.com">needhelp@company.com</a></p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-pin"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p>66 broklyn golden street line <br> new york</p>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-                            <div class="footer-widget__column footer-widget__social-box clearfix">
-                                <div class="site-footer__social">
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                    <a href="#"><i class="fab fa-facebook"></i></a>
-                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                    <a href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="site-footer__bottom">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xl-12">
-                            <div class="site-footer__bottom-inner">
-                                <p class="site-footer__bottom-text">© All Copyright 2022 by <a
-                                        href="#">Layerdrops.com</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+			<div class="site-footer-bg-1 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms"
+				style="background-image: url(../static/assets/images/shapes/site-footer-shape-1.png);">
+			</div>
+			<div class="site-footer-bg-2 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms"
+				style="background-image: url(../static/assets/images/shapes/site-footer-shape-2.png);">
+			</div>
+			<div class="site-footer__top">
+				<div class="container">
+					<div class="site-footer__top-inner">
+						<div class="site-footer__top-left">
+							<div class="site-footer__top-icon">
+								<span class="fas fa-robot"></span>
+							</div>
+							<h3 class="site-footer__top-title">Helping you run your bussiness seamlessly</h3>
+						</div>
+						<div class="site-footer__top-right">
+							<a href="about.html" class="thm-btn site-footer__btn">Discover more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="site-footer__middle">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+							<div class="footer-widget__column footer-widget__about">
+								<div class="footer-widget__logo">
+									<a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='assets/images/resources/footer-logo.png')}}" alt=""></a>
+								</div>
+								<div class="footer-widget__about-text-box">
+									<p class="footer-widget__about-text">Log on to get access to our Websites and Softwares</p>
+								</div>
+								<form class="footer-widget__newsletter-form">
+									<div class="footer-widget__newsletter-input-box">
+										<input type="email" placeholder="Email address" name="email">
+										<button type="submit" class="footer-widget__newsletter-btn"><img
+												src="{{ url_for('static', filename='assets/images/icon/footer-widget-newsletter-send-icon.png')}}"
+												alt=""></button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+							<div class="footer-widget__column footer-widget__links clearfix">
+								<h3 class="footer-widget__title">Links</h3>
+								<ul class="footer-widget__links-list list-unstyled clearfix">
+									<li><a href="about.html">About us</a></li>
+									<li><a href="team.html">Meet our team</a></li>
+									<li><a href="blog.html">News & media</a></li>
+									<li><a href="projects-page-1.html">Our projects</a></li>
+									<li><a href="{{url_for('contact')}}">Contacts</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+							<div class="footer-widget__column footer-widget__contact clearfix">
+								<h3 class="footer-widget__title">Contact</h3>
+								<ul class="footer-widget__contact-list list-unstyled clearfix">
+									<li>
+										<div class="icon">
+											<span class="fas fa-phone"></span>
+										</div>
+										<div class="text">
+											<p><a href="tel:980009850">+91 98765-43210</a></p>
+										</div>
+									</li>
+									<li>
+										<div class="icon">
+											<span class=" fas fa-envelope"></span>
+										</div>
+										<div class="text">
+											<p><a href="mailto:needhelp@company.com">info@nbatechsolutions.in</a></p>
+										</div>
+									</li>
+									<li>
+										<div class="icon">
+											<span class="fas fa-map-marker-alt"></span>
+										</div>
+										<div class="text">
+											<p>Coimbatore <br>Tamil Nadu</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+							<div class="footer-widget__column footer-widget__social-box clearfix">
+								<div class="site-footer__social">
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-facebook"></i></a>
+									<a href="#"><i class="fab fa-pinterest-p"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="site-footer__bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="site-footer__bottom-inner">
+								<p class="site-footer__bottom-text">© All Copyright 2024 by <a
+										href="#">NBA Tech Solutions</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
         <!--Site Footer End-->
 
 

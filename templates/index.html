@@ -701,15 +701,15 @@
 						<!-- Project Page Two Single -->
 						<div class="project-two__single">
 							<div class="project-two__img">
-								<img src="{{ url_for('static', filename=project_data['project'][j]['image_url']) }}" width="500" height="300" alt="">
+								<img src="{{ url_for('static', filename=project_data['project'][j]['image_url']) }}" style="object-fit: contain;" width="500" height="300" alt="">
 
 							</div>
 							<div class="project-two__content">
 								<p class="project-two__sub-title">{{ project_data['project'][j]['kind'] }}</p>
 								<h3 class="project-two__title"><a href="project-details.html">{{ project_data['project'][j]['name'] }}</a></h3>
-								<div class="project-two__arrow">
+								<!-- <div class="project-two__arrow">
 									<a href="project-details.html"><i class="fa fa-long-arrow-alt-right"></i></a>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
