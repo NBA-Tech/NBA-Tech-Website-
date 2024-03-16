@@ -1,4 +1,4 @@
-from flask import Flask, render_template,jsonify
+from flask import Flask, render_template,jsonify,request
 import json
 
 app = Flask(__name__)
@@ -15,15 +15,17 @@ def about():
 
 @app.route('/services')
 def services():
+    service_type=request.args.get('type')
     with open('Data/services.json', 'r') as f:
         data = json.load(f)
-    print(data)
-    return render_template('services_prod.html',service_data={"services":data,"type":"product_dev"})
+    return render_template('services_prod.html',service_data={"services":data,"type":service_type})
 @app.route('/gallery')
 def gallery():
     with open('Data/project_details.json', 'r') as f:
         data = json.load(f)
-    
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('404.html'), 404  
     
     return render_template('gallery.html',project_data={"project":data,"length":len(data)})
 if __name__ == '__main__':

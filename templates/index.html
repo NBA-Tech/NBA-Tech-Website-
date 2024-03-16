@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>One Page || Home One || Notech || Notech HTML Template For It Solution </title>
+    <title>NBA Tech	</title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='assets/images/logo.png') }}" />
     <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='assets/images/logo.png') }}" />
@@ -83,7 +83,7 @@
 									<span class="fas fa-map-marker-alt"></span>
 								</div>
 								<div class="text">
-									<p>66 broklyn golden street line. New York</p>
+									<p>Chettipalayam Coimbatore Tamilnadu</p>
 								</div>
 							</li>
 							<li>
@@ -100,7 +100,6 @@
 						<div class="main-header__top-right-content">
 							<ul class="list-unstyled main-header__top-right-menu">
 								<li><a href="#">About</a></li>
-								<li><a href="#">Leadership</a></li>
 								<li><a href="#">Contact</a></li>
 							</ul>
 							<div class="main-header__top-right-social">
@@ -140,9 +139,6 @@
 								</li>
 								<li class="scrollToLink">
 									<a href="#projects">Projects</a>
-								</li>
-								<li class="scrollToLink">
-									<a href="#blog">Blog</a>
 								</li>
 							</ul>
 						</div>
@@ -211,18 +207,9 @@
 										<h2>technology</h2>
 										<div class="main-slider__btn-video-box">
 											<div class="main-slider__btn-box">
-												<a href="about.html" class="thm-btn main-slider__btn">Discover more</a>
+												<a href="{{url_for('about')}}" class="thm-btn main-slider__btn">Discover more</a>
 											</div>
-											<div class="main-slider__video-link">
-												<a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-													class="video-popup">
-													<div class="main-slider__video-icon">
-														<span class="fa fa-play"></span>
-														<i class="ripple"></i>
-													</div>
-												</a>
-												<h3 class="main-slider__video-text">Watch <br> how it works</h3>
-											</div>
+											
 										</div>
 									</div>
 								</div>
@@ -251,18 +238,9 @@
 										<h2>technology</h2>
 										<div class="main-slider__btn-video-box">
 											<div class="main-slider__btn-box">
-												<a href="about.html" class="thm-btn main-slider__btn">Discover more</a>
+												<a href="{{url_for('about')}}" class="thm-btn main-slider__btn">Discover more</a>
 											</div>
-											<div class="main-slider__video-link">
-												<a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-													class="video-popup">
-													<div class="main-slider__video-icon">
-														<span class="fa fa-play"></span>
-														<i class="ripple"></i>
-													</div>
-												</a>
-												<h3 class="main-slider__video-text">Watch <br> how it works</h3>
-											</div>
+											
 										</div>
 									</div>
 								</div>
@@ -291,18 +269,9 @@
 										<h2>technology</h2>
 										<div class="main-slider__btn-video-box">
 											<div class="main-slider__btn-box">
-												<a href="about.html" class="thm-btn main-slider__btn">Discover more</a>
+												<a href="{{url_for('about')}}" class="thm-btn main-slider__btn">Discover more</a>
 											</div>
-											<div class="main-slider__video-link">
-												<a href="https://www.youtube.com/watch?v=Get7rqXYrbQ"
-													class="video-popup">
-													<div class="main-slider__video-icon">
-														<span class="fa fa-play"></span>
-														<i class="ripple"></i>
-													</div>
-												</a>
-												<h3 class="main-slider__video-text">Watch <br> how it works</h3>
-											</div>
+											
 										</div>
 									</div>
 								</div>
@@ -324,8 +293,8 @@
 			<div class="container">
 				<div class="get-solutions__inner">
 					<p class="get-solutions__text">Stop wasting time and money on technology. <a
-							href="about.html">Explore
-							notech</a> and get best solutions.</p>
+							href="{{url_for('about')}}">Explore
+							NBA Tech</a> and get best solutions.</p>
 				</div>
 			</div>
 		</section>
@@ -341,13 +310,13 @@
 							<div class="feature-one__img">
 								<img src="{{url_for('static',filename='assets/images/resources/feature-1-1.jpg')}}" alt="">
 								<div class="feature-one__title-box">
-									<h3 class="feature-one__title"><a href="about.html">Manage IT services</a></h3>
+									<h3 class="feature-one__title"><a href="{{url_for('services',type='product_development')}}">Manage IT services</a></h3>
 								</div>
 								<div class="feature-one__hover-content">
 									<div class="feature-one__icon">
 										<span class="icon-system"></span>
 									</div>
-									<h3 class="feature-one__hover-title"><a href="about.html">Manage IT services</a>
+									<h3 class="feature-one__hover-title"><a href="{{url_for('services',type='product_development')}}">Manage IT services</a>
 									</h3>
 									<p class="feature-one__hover-text">Delivering top-tier IT services encompassing mobile/web, software, AI, intelligent bots, cloud solutions, and hosting</p>
 									
@@ -361,13 +330,13 @@
 							<div class="feature-one__img">
 								<img src="{{url_for('static',filename='assets/images/resources/feature-1-2.jpg')}}" alt="">
 								<div class="feature-one__title-box">
-									<h3 class="feature-one__title"><a href="about.html">UI/UX Design Services</a></h3>
+									<h3 class="feature-one__title"><a href="{{url_for('services',type='ui_ux_dev')}}">UI/UX Design Services</a></h3>
 								</div>
 								<div class="feature-one__hover-content">
 									<div class="feature-one__icon">
 										<span class="icon-cyber"></span>
 									</div>
-									<h3 class="feature-one__hover-title"><a href="about.html">UI/UX Design Services</a></h3>
+									<h3 class="feature-one__hover-title"><a href="{{url_for('services',type='ui_ux_dev')}}">UI/UX Design Services</a></h3>
 									<p class="feature-one__hover-text">Crafting exceptional UI/UX designs that captivate users, elevate brands, and drive seamless digital experiences</p>
 
 								</div>
@@ -462,7 +431,7 @@
 										technology problems.</p>
 								</div>
 							</div>
-							<a href="about.html" class="get-to-know__btn thm-btn">Discover more</a>
+							<a href="{{url_for('about')}}" class="get-to-know__btn thm-btn">Discover more</a>
 						</div>
 					</div>
 				</div>
@@ -493,9 +462,7 @@
 						</div>
 						<div class="col-xl-6 col-lg-6">
 							<div class="services-one__top-right">
-								<p class="services-one__top-text">Lorem ipsum dolor sit amet, consectetur adipisicing
-									elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. quis nostrud
-									exercitation ullamco laboris.</p>
+								<p class="services-one__top-text">At NBA Tech, we deliver tailored IT solutions for businesses. Our services span software development, and cloud computing. With a focus on innovation and reliability, we optimize efficiency and drive growth</p>
 							</div>
 						</div>
 					</div>
@@ -507,9 +474,9 @@
 								<div class="services-one__icon">
 									<span class="fas fa-laptop-code"></span>
 								</div>
-								<h3 class="services-one__title"><a href="product-development.html">Product <br>
+								<h3 class="services-one__title"><a href="{{url_for('services',type='product_development')}}">Product <br>
 										development</a></h3>
-								<p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p>
+								<p class="services-one__text">Crafting Innovative Solutions<br> for Mobile, Web, Software, and Bots</p>
 							</div>
 						</li>
 						<li class="services-one__single">
@@ -517,9 +484,9 @@
 								<div class="services-one__icon">
 									<span class="fas fa-brain"></span>
 								</div>
-								<h3 class="services-one__title"><a href="ui-ux-designing.html">UI/UX <br> designing</a>
+								<h3 class="services-one__title"><a href="{{url_for('services',type='ui_ux_dev')}}">UI/UX <br> designing</a>
 								</h3>
-								<p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p>
+								<p class="services-one__text">Crafting Engaging UI/UX Experiences for Digital Platforms</p>
 							</div>
 						</li>
 						<li class="services-one__single">
@@ -527,9 +494,9 @@
 								<div class="services-one__icon">
 									<span class="fas fa-cog"></span>
 								</div>
-								<h3 class="services-one__title"><a href="digital-marketing.html">Digital <br>
+								<h3 class="services-one__title"><a href="{{url_for('services',type='ui_ux_dev')}}">Digital <br>
 										marketing</a></h3>
-								<p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p>
+								<p class="services-one__text">Elevating Your Online Presence with SEO and<br> Digital Marketing</p>
 							</div>
 						</li>
 						<li class="services-one__single">
@@ -537,9 +504,9 @@
 								<div class="services-one__icon">
 									<span class="fa-solid fa-robot"></span>
 								</div>
-								<h3 class="services-one__title"><a href="content-management.html">Artificial <br>
+								<h3 class="services-one__title"><a href="{{url_for('services',type='ai_ml')}}">Artificial <br>
 									Intelligence</a></h3>
-								<p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p>
+								<p class="services-one__text">Pioneering AI Solutions for Tomorrow's <br>Challenges</p>
 							</div>
 						</li>
 						<li class="services-one__single">
@@ -547,8 +514,8 @@
 								<div class="services-one__icon">
 									<span class="fa-solid fa-cloud"></span>
 								</div>
-								<h3 class="services-one__title"><a href="data-analysis.html">Cloud <br> solutions</a></h3>
-								<p class="services-one__text">Lorem ipsum dolor <br> sit amet do.</p>
+								<h3 class="services-one__title"><a href="{{url_for('services',type='cloud_services')}}">Cloud <br> solutions</a></h3>
+								<p class="services-one__text">Scaling Your Business with Cutting-Edge <br>Cloud Solutions</p>
 							</div>
 						</li>
 					</ul>
