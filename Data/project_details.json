@@ -1,23 +1,104 @@
 {
-    "skill_storm":{
-        "background_img":"assets/images/project/skill_5.jpeg",
-        "Client":"",
-        "Category":"Web Development integrated with AI",
-        "Services":"Product development",
-        "Web":"",
-        "title":"Project Description",
-        "project_description": "This project is a multi-expertise platform, allowing users to host the contest to express individual skills, and within the contest, participants can communicate. Winners are rewarded with cash prizes and recognition in this community. Our project nurtures an environment of collaboration, encourages users to learn from each other, and provides a platform for them to share their expertise with the world.",
-        "next_title":"Tech Stack we've used",
-        "tech_desc":"This platform utilizes a comprehensive tech stack to deliver a seamless user experience. Figma is employed for designing intuitive user interfaces, ensuring a user-friendly interaction. For the front-end implementation, we rely on HTML, CSS, JavaScript, and Bootstrap, leveraging their collective power to create responsive, visually appealing web pages. On the back-end, Python with the Flask framework drives our server-side logic, enabling efficient handling of requests and data processing. MongoDB serves as our database solution, providing flexibility and scalability to accommodate diverse data types and user interactions. To facilitate secure and convenient payment transactions, we integrate Stripe into our platform. Additionally, Firebase cloud storage caters to our storage needs, enabling efficient management and access to multimedia content. Together, this robust tech stack forms the foundation of our platform, empowering users to host contests, communicate, and share expertise seamlessly",
-        "tech_stack":[
-            "Figma is used for UI/UX design.",
-            "HTML, CSS, JS,Jquery,Ajax and Bootstrap are used for implementing the user-facing interface.",
-            "Python with Flask is used to handle server-side logic and API endpoints.",
-            "MongoDB is used for data storage.",
-            "Stripe is integrated for handling payment transactions.",
-            "Firebase cloud storage is used for storing media files.",
-            "Websocket for chatting page"
+    "0":{
+        "Type":"Web development integrated with AI",
+        "name":"Skill storm",
+        "images":[
+            "assets/images/project/skill_5.jpeg",
+            "assets/images/project/skill_4.jpeg",
+            "assets/images/project/skill_3.jpeg",
+            "assets/images/project/skill_7.jpeg"
         ]
 
+    },
+    "1":{
+        "Type":"Web Development",
+        "name":"sitapur nethralaya",
+        "images":[
+            "assets/images/project/sita_2.png",
+            "assets/images/project/sita_3.png",
+            "assets/images/project/sita_4.png",
+            "assets/images/project/sita_5.png"
+        ]
+    },
+    "2":{
+        "Type":"Bot Software",
+        "name":"Kijiji Scrap",
+        "images":[
+            "assets/images/project/kijiji_1.png",
+            "assets/images/project/kijiji_2.png"
+        ]
+    },
+    "3":{
+        "Type":"Software",
+        "name":"Quant Copier",
+        "images":[
+            "assets/images/project/tg_bot_1.png",
+            "assets/images/project/tg_bot_2.png",
+            "assets/images/project/tg_bot_3.png",
+            "assets/images/project/tg_bot_4.png"
+        ]
+    },
+    "4":{
+        "Type":"UI/UX Design",
+        "name":"Figma designs",
+        "images":[
+            "assets/images/project/UI.jpeg",
+            "assets/images/project/UI_1.jpeg",
+            "assets/images/project/UI_2.jpeg"
+        ]
+    },
+    "5":{
+        "Type":"Web development",
+        "name":"Study partner finder",
+        "images":[
+            "assets/images/project/study.png",
+            "assets/images/project/study_2.png",
+            "assets/images/project/study_3.png",
+            "assets/images/project/study_4.png"
+        ]
+    },
+    "6":{
+        "Type":"E-Commerce",
+        "name":"Nayah Foods",
+        "images":[
+            "assets/images/project/prod_3.jpeg",
+            "assets/images/project/prod_2.jpeg",
+            "assets/images/project/prod_1.jpeg"
+        ]
+    },
+    "7":{
+        "Type":"Web development",
+        "name":"Journey Begins",
+        "images":[
+            "assets/images/project/journey_3.jpeg",
+            "assets/images/project/journey_1.jpeg"
+        ]
+    },
+    "8":{
+        "Type":"Web Development",
+        "name":"UF Gaming",
+        "images":[
+            "assets/images/project/gaming.jpeg",
+            "assets/images/project/gaming_1.jpeg",
+            "assets/images/project/gaming_2.jpeg"
+        ]
+    },
+    "9":{
+        "Type":"CMS",
+        "name":"Supervisor Dashboard",
+        "images":[
+            "assets/images/project/CMS.jpeg",
+            "assets/images/project/CMS_2.jpeg",
+            "assets/images/project/CMS_3.jpeg",
+            "assets/images/project/CMS_1.jpeg"
+        ]
+    },
+    "10":{
+        "Type":"SEO",
+        "name":"Online marketing",
+        "images":[
+            "assets/images/project/sita.png",
+            "assets/images/project/Study(SEO).png"
+        ]
     }
 }
