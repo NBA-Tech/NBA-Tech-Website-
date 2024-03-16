@@ -21,21 +21,21 @@
         ]
     },
     "2":{
-        "Type":"Bot Software",
-        "name":"Kijiji Scrap",
+        "Type":"SEO",
+        "name":"Online marketing",
         "images":[
-            "assets/images/project/kijiji_1.png",
-            "assets/images/project/kijiji_2.png"
+            "assets/images/project/sita.png",
+            "assets/images/project/Study(SEO).png"
         ]
     },
     "3":{
-        "Type":"Software",
-        "name":"Quant Copier",
+        "Type":"CMS",
+        "name":"Supervisor Dashboard",
         "images":[
-            "assets/images/project/tg_bot_1.png",
-            "assets/images/project/tg_bot_2.png",
-            "assets/images/project/tg_bot_3.png",
-            "assets/images/project/tg_bot_4.png"
+            "assets/images/project/CMS.jpeg",
+            "assets/images/project/CMS_2.jpeg",
+            "assets/images/project/CMS_3.jpeg",
+            "assets/images/project/CMS_1.jpeg"
         ]
     },
     "4":{
@@ -84,21 +84,21 @@
         ]
     },
     "9":{
-        "Type":"CMS",
-        "name":"Supervisor Dashboard",
+        "Type":"Software",
+        "name":"Quant Copier",
         "images":[
-            "assets/images/project/CMS.jpeg",
-            "assets/images/project/CMS_2.jpeg",
-            "assets/images/project/CMS_3.jpeg",
-            "assets/images/project/CMS_1.jpeg"
+            "assets/images/project/tg_bot_4.png",
+            "assets/images/project/tg_bot_1.png",
+            "assets/images/project/tg_bot_2.png",
+            "assets/images/project/tg_bot_3.png"
         ]
     },
     "10":{
-        "Type":"SEO",
-        "name":"Online marketing",
+        "Type":"Bot Software",
+        "name":"Kijiji Scrap",
         "images":[
-            "assets/images/project/sita.png",
-            "assets/images/project/Study(SEO).png"
+            "assets/images/project/kijiji_1.png",
+            "assets/images/project/kijiji_2.png"
         ]
     }
 }

@@ -394,5 +394,43 @@
                 "desc":"Keep your ERP system up-to-date and running smoothly with our upgrade and maintenance services. We help you stay current with the latest ERP software releases, implement upgrades and patches, and perform routine maintenance tasks to ensure optimal performance, security, and reliability."
             }
         ]
+    },
+    "digital_marketing":{
+        "title":"Digital Marketing",
+        "description":"Welcome to NBA Tech's Digital Marketing Menu. We understand the importance of a strong digital presence in today's competitive landscape. Our comprehensive suite of services is designed to help businesses amplify their online visibility, engage their target audience, and drive meaningful results.",
+        "approach":"We take a data-driven and customer-centric approach to digital marketing, tailoring every strategy and campaign to your unique business goals and objectives. Our experienced team collaborates closely with you to develop customized solutions that deliver measurable results and maximize ROI.",
+        "whyus":[
+            "<strong>Expertise: </strong>Our team comprises experienced digital marketers with a proven track record of delivering results across various industries.<br>",
+            "<strong>Customized Solutions: </strong>We tailor our digital marketing strategies to your specific business goals, target audience, and industry requirements.<br>",
+            "<strong>Transparent Communication: </strong>We believe in open and transparent communication, keeping you informed and involved at every stage of the process.<br>",
+            "<strong>Measurable Results: </strong>We focus on delivering measurable results and providing actionable insights to continuously improve your digital marketing efforts.<br>"
+        ],
+        "services":[
+            {
+                "title":"Search Engine Optimization (SEO)",
+                "desc":"Increase your website's visibility and organic traffic with our SEO services. Our experts optimize your website's content, structure, and technical elements to improve its search engine rankings and drive qualified traffic to your site."
+            },
+            {
+                "title":"Pay-Per-Click (PPC) Advertising",
+                "desc":"Maximize your online reach and generate immediate results with our PPC advertising services. We create targeted ad campaigns across various platforms, such as Google Ads and social media channels, to attract qualified leads and drive conversions."
+            },
+            {
+                "title":"Social Media Marketing (SMM)",
+                "desc":"Build meaningful relationships with your audience and enhance brand awareness with our social media marketing services. We develop engaging content, manage your social media profiles, and run targeted ad campaigns to foster engagement and drive traffic to your website."
+            },
+            {
+                "title":"Content Marketing",
+                "desc":"Establish your authority and credibility in your industry with our content marketing services. From blog posts and articles to videos and infographics, we create valuable and relevant content that resonates with your target audience and drives engagement."
+            },
+            {
+                "title":"Email Marketing",
+                "desc":"Nurture leads and drive conversions with our email marketing services. We design and execute targeted email campaigns that deliver personalized messages to your subscribers, driving engagement, and encouraging action."
+            },
+            {
+                "title":"Analytics and Reporting",
+                "desc":"Gain valuable insights into your digital marketing efforts with our analytics and reporting services. We track and analyze key performance metrics, such as website traffic, conversion rates, and engagement levels, and provide actionable insights to optimize your campaigns and maximize ROI."
+            }
+        ]
     }
+
 }
