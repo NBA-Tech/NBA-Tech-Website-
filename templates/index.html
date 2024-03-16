@@ -99,8 +99,8 @@
 					<div class="main-header__top-right">
 						<div class="main-header__top-right-content">
 							<ul class="list-unstyled main-header__top-right-menu">
-								<li><a href="#">About</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="{{url_for('about')}}">About</a></li>
+								<li><a href="{{url_for('contact')}}">Contact</a></li>
 							</ul>
 							<div class="main-header__top-right-social">
 								<a href="#"><i class="fab fa-twitter"></i></a>
@@ -117,7 +117,7 @@
 
 					<div class="main-menu__left main-menu__left--two">
 						<div class="main-menu__logo">
-							<a href="index.html">
+							<a href="{{url_for('index')}}">
 								<img class="logo-dark" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="" width="135px" height="50px">
 								<img class="logo-light" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="">
 							</a>
@@ -144,23 +144,22 @@
 						</div>
 					</div>
 					<div class="main-menu__right">
-						<div class="main-menu__search-call">
-							<div class="main-menu__call">
-								<div class="main-menu__call-icon">
-									<img src="{{url_for('static',filename='assets/images/icon/main-menu-icon-comment.png')}}" alt="">
-								</div>
-								<div class="main-menu__call-number">
-									<p>Have any question?</p>
-									<h5><a href="tel:926668880000"><span>Free</span> +98 (000)-9850</a></h5>
-								</div>
-							</div>
-							<div class="main-menu__search-box">
-								<a href="#" class="main-menu__search search-toggler fas fa-search"></a>
-							</div>
-						</div>
-					</div>
-
-				</div>
+                        <div class="main-menu__search-call">
+                            <div class="main-menu__call">
+                                <div class="main-menu__call-icon">
+                                    <img src="{{url_for('static',filename='assets/images/icon/main-menu-icon-comment.png')}}" alt="">
+                                </div>
+                                <div class="main-menu__call-number">
+                                    <p>Have any question?</p>
+                                    <h5><a href="tel:926668880000"><span>Free</span> +98 (000)-9850</a></h5>
+                                </div>
+                            </div>
+                            <div class="main-menu__search-box">
+                                <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			</nav>
 		</header>
 
@@ -535,7 +534,7 @@
 					<p class="business-from__sub-title">Business from great idea to</p>
 					<h2 class="business-from__title">launching</h2>
 					<div class="business-from__btn-box">
-						<a href="contact.html" class="business-from__btn thm-btn">Contact us now</a>
+						<a href="{{url_for('contact')}}" class="business-from__btn thm-btn">Contact us now</a>
 					</div>
 				</div>
 			</div>
@@ -1138,7 +1137,7 @@
 						<div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
 							<div class="footer-widget__column footer-widget__about">
 								<div class="footer-widget__logo">
-									<a href="index.html"><img src="{{ url_for('static', filename='assets/images/resources/footer-logo.png')}}" alt=""></a>
+									<a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='assets/images/resources/footer-logo.png')}}" alt=""></a>
 								</div>
 								<div class="footer-widget__about-text-box">
 									<p class="footer-widget__about-text">Log on to get access to our Websites and Softwares</p>
@@ -1161,7 +1160,7 @@
 									<li><a href="team.html">Meet our team</a></li>
 									<li><a href="blog.html">News & media</a></li>
 									<li><a href="projects-page-1.html">Our projects</a></li>
-									<li><a href="contact.html">Contacts</a></li>
+									<li><a href="{{url_for('contact')}}">Contacts</a></li>
 								</ul>
 							</div>
 						</div>
@@ -1236,7 +1235,7 @@
 			<span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
 			<div class="logo-box">
-				<a href="index.html" aria-label="logo image"><img src="{{ url_for('static', filename='assets/images/resources/footer-logo.png')}}"
+				<a href="{{url_for('index')}}" aria-label="logo image"><img src="{{ url_for('static', filename='assets/images/resources/footer-logo.png')}}"
 						width="155" alt="" /></a>
 			</div>
 			<!-- /.logo-box -->
