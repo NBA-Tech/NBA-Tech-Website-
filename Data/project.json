@@ -59,6 +59,16 @@
         "kind":"CMS Dashboard",
         "name":"Supervisor Dashboard",
         "image_url":"assets/images/project/CMS_3.jpeg"
+    },
+    "12":{
+        "kind":"Software",
+        "name":"Quant Copier",
+        "image_url":"assets/images/project/tg_bot_4.png"
+    },
+    "13":{
+        "kind":"Mobile App",
+        "name":"Bus Ease",
+        "image_url":"assets/images/project/bus_mob_1.jpeg"
     }
 
     

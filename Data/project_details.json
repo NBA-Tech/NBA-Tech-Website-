@@ -89,7 +89,6 @@
         "images":[
             "assets/images/project/tg_bot_4.png",
             "assets/images/project/tg_bot_1.png",
-            "assets/images/project/tg_bot_2.png",
             "assets/images/project/tg_bot_3.png"
         ]
     },
@@ -99,6 +98,14 @@
         "images":[
             "assets/images/project/kijiji_1.png",
             "assets/images/project/kijiji_2.png"
+        ]
+    },
+    "11":{
+        "Type":"Mobile App",
+        "name":"Bus Book",
+        "images":[
+            "assets/images/project/bus_mob_1.jpeg",
+            "assets/images/project/bus_mob_2.jpeg"
         ]
     }
 }

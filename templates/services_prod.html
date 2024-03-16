@@ -207,9 +207,9 @@
                         <li><span>/</span></li>
                         <li><a href="services.html">Service</a></li>
                         <li><span>/</span></li>
-                        <li class="active">Product Development</li>
+                        <li class="active">{{service_data["services"][service_data['type']]["title"]}}</li>
                     </ul>
-                    <h2>Product Development</h2>
+                    <h2>{{service_data["services"][service_data['type']]["title"]}}</h2>
                 </div>
             </div>
         </section>
@@ -224,16 +224,62 @@
                             <div class="service-details__service">
                                 <h3 class="service-details__title">Services</h3>
                                 <ul class="service-details__service-list list-unstyled">
-                                    <li class="active"><a href="product-development.html">Product development <span class="fa fa-long-arrow-alt-right"></span></a></li>
-
-                                    <li><a href="ui-ux-designing.html">UI/UX designing <span class="fa fa-long-arrow-alt-right"></span></a></li>
-
-                                    <li><a href="digital-marketing.html">Digital marketing <span class="fa fa-long-arrow-alt-right"></span></a></li>
-
-                                    <li><a href="content-management.html">Content management <span class="fa fa-long-arrow-alt-right"></span></a></li>
-
-                                    <li><a href="data-analysis.html">Data analysis <span class="fa fa-long-arrow-alt-right"></span></a></li>
-                                </ul>
+                                    {% if service_data["services"][service_data['type']]["title"]=="Product Development" %}
+                                    <li class="active"><a href="{{ url_for('services', type='product_development') }}">Product Development <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% else %}
+                                    <li><a href="{{ url_for('services', type='product_development') }}">Product Development <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% endif %}
+                                {% if service_data["services"][service_data['type']]["title"]=="UI/UX Development Services" %}
+                                    <li class="active"><a href="{{ url_for('services', type='ui_ux_dev') }}">UI/UX Development <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% else %}
+                                    <li><a href="{{ url_for('services', type='ui_ux_dev') }}">UI/UX Development <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% endif %}
+                                {% if service_data["services"][service_data['type']]["title"]=="Software Development Services" %}
+                                    <li class="active"><a href="{{ url_for('services', type='software_dev') }}">Software Development <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% else %}
+                                    <li><a href="{{ url_for('services', type='software_dev') }}">Software Development <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% endif %}
+                                {% if service_data["services"][service_data['type']]["title"]=="Web Development Services" %}
+                                    <li class="active"><a href="{{ url_for('services', type='web_dev') }}">Web Development <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% else %}
+                                    <li><a href="{{ url_for('services', type='web_dev') }}">Web Development <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% endif %}
+                                {% if service_data["services"][service_data['type']]["title"]=="Mobile App Development Services" %}
+                                    <li class="active"><a href="{{ url_for('services', type='mobile_app_dev') }}">Mobile Application <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% else %}
+                                    <li><a href="{{ url_for('services', type='mobile_app_dev') }}">Mobile Application <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% endif %}
+                                {% if service_data["services"][service_data['type']]["title"]=="Cloud Computing Services" %}
+                                    <li class="active"><a href="{{ url_for('services', type='cloud_services') }}">Cloud Solutions <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% else %}
+                                    <li><a href="{{ url_for('services', type='cloud_services') }}">Cloud Solutions <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% endif %}
+                                {% if service_data["services"][service_data['type']]["title"]=="Artificial Intelligence and Machine Learning Services" %}
+                                    <li class="active"><a href="{{ url_for('services', type='ai_ml') }}">Artificial Intelligence <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% else %}
+                                    <li><a href="{{ url_for('services', type='ai_ml') }}">Artificial Intelligence <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% endif %}
+                                {% if service_data["services"][service_data['type']]["title"]=="IT Consulting and Strategy Services" %}
+                                    <li class="active"><a href="{{ url_for('services', type='it_consulting_strategy') }}">IT Consulting <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% else %}
+                                    <li><a href="{{ url_for('services', type='it_consulting_strategy') }}">IT Consulting <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% endif %}
+                                {% if service_data["services"][service_data['type']]["title"]=="Database Management Services" %}
+                                    <li class="active"><a href="{{ url_for('services', type='database_management') }}">Database Management <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% else %}
+                                    <li><a href="{{ url_for('services', type='database_management') }}">Database Management <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% endif %}
+                                {% if service_data["services"][service_data['type']]["title"]=="Enterprise Resource Planning (ERP) Systems" %}
+                                    <li class="active"><a href="{{ url_for('services', type='erp_systems') }}">ERP System <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% else %}
+                                    <li><a href="{{ url_for('services', type='erp_systems') }}">ERP System <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% endif %}
+                                {% if service_data["services"][service_data['type']]["title"]=="Digital Marketing" %}
+                                    <li class="active"><a href="{{ url_for('services', type='digital_marketing') }}">Digital Marketing <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% else %}
+                                    <li><a href="{{ url_for('services', type='digital_marketing') }}">Digital Marketing <span class="fa fa-long-arrow-alt-right"></span></a></li>
+                                {% endif %}
+                                                                </ul>
                             </div>
                             <div class="service-details__need-help">
 								<div class="service-details__need-help-bg" style="background-image: url(assets/images/backgrounds/service-details-need-help-bg.jpg)">
