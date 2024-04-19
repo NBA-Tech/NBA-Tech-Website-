@@ -32,5 +32,5 @@ def gallery():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
-
-app.run(debug=False)
+if __name__ == '__main__':
+    app.run(debug=False)
