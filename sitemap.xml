@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://nbatech.onrender.com/</loc>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+        <lastmod>2024-02-02</lastmod>
+    </url>
+    <url>
+        <loc>https://nbatech.onrender.com/about</loc>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+        <lastmod>2024-02-02</lastmod>
+    </url>
+    <url>
+        <loc>https://nbatech.onrender.com/contact</loc>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+        <lastmod>2024-02-02</lastmod>
+    </url>
+    <url>
+        <loc>https://nbatech.onrender.com/gallery</loc>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+        <lastmod>2024-02-02</lastmod>
+    </url>
+    <url>
+        <loc>https://nbatech.onrender.com/services</loc>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+        <lastmod>2024-02-02</lastmod>
+    </url>
+</urlset>

@@ -1,4 +1,4 @@
-from flask import Flask, render_template,jsonify,request
+from flask import Flask, render_template,jsonify,request,send_file
 import json
 
 app = Flask(__name__)
@@ -32,5 +32,11 @@ def gallery():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@app.route('/sitemap', methods=['GET'])
+def sitemap():
+    xml_file_path = 'sitemap.xml'
+    return send_file(xml_file_path, mimetype='application/xml')
+
 if __name__ == '__main__':
     app.run(debug=False)
