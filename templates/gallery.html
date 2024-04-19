@@ -183,13 +183,10 @@
                         <p>Have any question?</p>
                         <h5>
                         <a href="tel:926668880000"
-                            ><span>Free</span> +98 (000)-9850</a
+                            ><span>Free</span> +91 9344269970</a
                         >
                         </h5>
                     </div>
-                    </div>
-                    <div class="main-menu__search-box">
-                        <i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #1b1525;"></i>
                     </div>
                 </div>
                 </div>
@@ -203,7 +200,7 @@
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg)">
+            <div class="page-header-bg" style="background-image: url(../static/assets/images/backgrounds/page-header-bg.webp)">
             </div>
             <div class="container">
                 <div class="page-header__inner">
@@ -272,29 +269,21 @@
 						<div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
 							<div class="footer-widget__column footer-widget__about">
 								<div class="footer-widget__logo">
-									<a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='assets/images/resources/footer-logo.png')}}" alt=""></a>
+									<a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='assets/images/logo.png')}}" alt="" width="135" height="50"></a>
 								</div>
 								<div class="footer-widget__about-text-box">
 									<p class="footer-widget__about-text">Log on to get access to our Websites and Softwares</p>
 								</div>
-								<form class="footer-widget__newsletter-form">
-									<div class="footer-widget__newsletter-input-box">
-										<input type="email" placeholder="Email address" name="email">
-										<button type="submit" class="footer-widget__newsletter-btn"><img
-												src="{{ url_for('static', filename='assets/images/icon/footer-widget-newsletter-send-icon.png')}}"
-												alt=""></button>
-									</div>
-								</form>
 							</div>
 						</div>
 						<div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
 							<div class="footer-widget__column footer-widget__links clearfix">
 								<h3 class="footer-widget__title">Links</h3>
 								<ul class="footer-widget__links-list list-unstyled clearfix">
-									<li><a href="about.html">About us</a></li>
-									<li><a href="team.html">Meet our team</a></li>
-									<li><a href="blog.html">News & media</a></li>
-									<li><a href="projects-page-1.html">Our projects</a></li>
+									<li><a href="{{url_for('about')}}">About us</a></li>
+									<li><a href="{{url_for('about')}}">Meet our team</a></li>
+									
+									<li><a href="{{url_for('services',type='product_development')}}">Our projects</a></li>
 									<li><a href="{{url_for('contact')}}">Contacts</a></li>
 								</ul>
 							</div>
@@ -308,7 +297,7 @@
 											<span class="fas fa-phone"></span>
 										</div>
 										<div class="text">
-											<p><a href="tel:980009850">+91 98765-43210</a></p>
+											<p><a href="tel:980009850">+91 9344269970</a></p>
 										</div>
 									</li>
 									<li>
@@ -316,7 +305,7 @@
 											<span class=" fas fa-envelope"></span>
 										</div>
 										<div class="text">
-											<p><a href="mailto:nbatechofficial@gmail.com">info@nbatechsolutions.in</a></p>
+											<p><a href="mailto:nbatechofficial@gmail.com">nbatechofficial@gmail.com</a></p>
 										</div>
 									</li>
 									<li>
@@ -380,7 +369,7 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:needhelp@packageName__.com">needhelp@notech.com</a>
+                    <a href="mailto:needhelp@packageName__.com">nbatechofficial@gmail.com</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>

@@ -165,17 +165,12 @@
                           <p>Have any question?</p>
                           <h5>
                             <a href="tel:926668880000"
-                              ><span>Free</span> +98 (000)-9850</a
+                              ><span>Free</span> +91 9344269970</a
                             >
                           </h5>
                         </div>
                       </div>
-                      <div class="main-menu__search-box">
-                        <a
-                          href="#"
-                          class="main-menu__search search-toggler icon-magnifying-glass"
-                        ></a>
-                      </div>
+
                     </div>
                   </div>
                 </div>
@@ -188,7 +183,7 @@
 
         <!--Page Header Start-->
         <section class="page-header">
-            <div class="page-header-bg" style="background-image: url(assets/images/backgrounds/page-header-bg.jpg)">
+            <div class="page-header-bg" style="background-image: url(../static/assets/images/backgrounds/page-header-bg.webp)">
             </div>
             <div class="container">
                 <div class="page-header__inner">
@@ -271,18 +266,7 @@
                                 {% endif %}
                                                                 </ul>
                             </div>
-                            <div class="service-details__need-help">
-								<div class="service-details__need-help-bg" style="background-image: url(assets/images/backgrounds/service-details-need-help-bg.jpg)">
-								</div>
-								<div class="service-details__need-help-icon">
-									<img src="assets/images/icon/service-details-need-help-icon.png" alt="">
-								</div>
-								<h2 class="service-details__need-help-title">Easy solutions <br> to your tech <br> problem</h2>
-								<div class="service-details__need-help-contact">
-									<p>Have any question?</p>
-									<a href="tel:980009850"> <span>Free</span> +98 (000)-9850</a>
-								</div>
-							</div>
+                            
                             <!-- <div class="service-details__download">
                                 <a href="about.html" class="thm-btn service-details__download-btn">Download our flyer</a>
                             </div> -->
@@ -363,17 +347,17 @@
         <!--Site Footer Start-->
         <footer class="site-footer">
 			<div class="site-footer-bg-1 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms"
-				style="background-image: url(assets/images/shapes/site-footer-shape-1.png);">
+				style="background-image: url(../static/assets/images/shapes/site-footer-shape-1.png);">
 			</div>
 			<div class="site-footer-bg-2 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms"
-				style="background-image: url(assets/images/shapes/site-footer-shape-2.png);">
+				style="background-image: url(../static/assets/images/shapes/site-footer-shape-2.png);">
 			</div>
 			<div class="site-footer__top">
 				<div class="container">
 					<div class="site-footer__top-inner">
 						<div class="site-footer__top-left">
 							<div class="site-footer__top-icon">
-								<span class="icon-artificial-intelligence"></span>
+								<span class="fas fa-robot"></span>
 							</div>
 							<h3 class="site-footer__top-title">Helping you run your bussiness seamlessly</h3>
 						</div>
@@ -389,29 +373,21 @@
 						<div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
 							<div class="footer-widget__column footer-widget__about">
 								<div class="footer-widget__logo">
-									<a href="{{url_for('index')}}"><img src="assets/images/resources/footer-logo.png" alt=""></a>
+									<a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='assets/images/logo.png')}}" alt="" width="135" height="50"></a>
 								</div>
 								<div class="footer-widget__about-text-box">
 									<p class="footer-widget__about-text">Log on to get access to our Websites and Softwares</p>
 								</div>
-								<form class="footer-widget__newsletter-form">
-									<div class="footer-widget__newsletter-input-box">
-										<input type="email" placeholder="Email address" name="email">
-										<button type="submit" class="footer-widget__newsletter-btn"><img
-												src="assets/images/icon/footer-widget-newsletter-send-icon.png"
-												alt=""></button>
-									</div>
-								</form>
 							</div>
 						</div>
 						<div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
 							<div class="footer-widget__column footer-widget__links clearfix">
 								<h3 class="footer-widget__title">Links</h3>
 								<ul class="footer-widget__links-list list-unstyled clearfix">
-									<li><a href="about.html">About us</a></li>
-									<li><a href="team.html">Meet our team</a></li>
-									<li><a href="blog.html">News & media</a></li>
-									<li><a href="projects-page-1.html">Our projects</a></li>
+									<li><a href="{{url_for('about')}}">About us</a></li>
+									<li><a href="{{url_for('about')}}">Meet our team</a></li>
+									
+									<li><a href="{{url_for('services',type='product_development')}}">Our projects</a></li>
 									<li><a href="{{url_for('contact')}}">Contacts</a></li>
 								</ul>
 							</div>
@@ -422,23 +398,23 @@
 								<ul class="footer-widget__contact-list list-unstyled clearfix">
 									<li>
 										<div class="icon">
-											<span class="icon-telephone"></span>
+											<span class="fas fa-phone"></span>
 										</div>
 										<div class="text">
-											<p><a href="tel:980009850">+91 98765-43210</a></p>
+											<p><a href="tel:980009850">+91 9344269970</a></p>
 										</div>
 									</li>
 									<li>
 										<div class="icon">
-											<span class="icon-email"></span>
+											<span class=" fas fa-envelope"></span>
 										</div>
 										<div class="text">
-											<p><a href="mailto:nbatechofficial@gmail.com">info@nbatechsolutions.in</a></p>
+											<p><a href="mailto:nbatechofficial@gmail.com">nbatechofficial@gmail.com</a></p>
 										</div>
 									</li>
 									<li>
 										<div class="icon">
-											<span class="icon-pin"></span>
+											<span class="fas fa-map-marker-alt"></span>
 										</div>
 										<div class="text">
 											<p>Coimbatore <br>Tamil Nadu</p>

@@ -73,92 +73,119 @@
 	</div>
 	<!-- /.preloader -->
 	<div class="page-wrapper">
-		<header class="main-header main-header--one clearfix">
-			<div class="main-header__top">
-				<div class="main-header__top-inner clearfix">
-					<div class="main-header__top-left">
-						<ul class="list-unstyled main-header__top-address">
-							<li>
-								<div class="icon">
-									<span class="fas fa-map-marker-alt"></span>
-								</div>
-								<div class="text">
-									<p>Chettipalayam Coimbatore Tamilnadu</p>
-								</div>
-							</li>
-							<li>
-								<div class="icon">
-									<span class="fas fa-envelope"></span>
-								</div>
-								<div class="text">
-									<p><a href="mailto:nbatechofficial@gmail.com">nbatechofficial@gmail.com</a></p>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="main-header__top-right">
-						<div class="main-header__top-right-content">
-							<ul class="list-unstyled main-header__top-right-menu">
-								<li><a href="{{url_for('about')}}">About</a></li>
-								<li><a href="{{url_for('contact')}}">Contact</a></li>
-							</ul>
-							<div class="main-header__top-right-social">
-								<a href="#"><i class="fab fa-twitter"></i></a>
-								<a href="#"><i class="fab fa-facebook"></i></a>
-								<a href="#"><i class="fab fa-instagram"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<nav class="main-menu clearfix">
-				<div class="main-menu__wrapper clearfix">
-
-					<div class="main-menu__left main-menu__left--two">
-						<div class="main-menu__logo">
-							<a href="{{url_for('index')}}">
-								<img class="logo-dark" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="" width="135px" height="50px">
-								<img class="logo-light" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="">
-							</a>
-						</div>
-						<div class="main-menu__main-menu-box main-menu__main-menu-box--two">
-							<a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
-							<ul class="main-menu__list one-page-scroll-menu">
-								<li class="scrollToLink current">
-									<a href="#home">Home</a>
-								</li>
-								<li class="scrollToLink">
-									<a href="#about">About</a>
-								</li>
-								<li class="scrollToLink">
-									<a href="#services">Services</a>
-								</li>
-								<li class="scrollToLink">
-									<a href="#testimonials">Testimonials</a>
-								</li>
-								<li class="scrollToLink">
-									<a href="#projects">Projects</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<div class="main-menu__right">
-                        <div class="main-menu__search-call">
-                            <div class="main-menu__call">
-                                <div class="main-menu__call-icon">
-                                    <img src="{{url_for('static',filename='assets/images/icon/main-menu-icon-comment.png')}}" alt="">
-                                </div>
-                                <div class="main-menu__call-number">
-                                    <p>Have any question?</p>
-                                    <h5><a href="tel:926668880000"><span>Free</span> +98 (000)-9850</a></h5>
-                                </div>
-                            </div>
-
-                        </div>
+		<header class="main-header clearfix">
+            <div class="main-header__top">
+            <div class="main-header__top-inner clearfix">
+                <div class="main-header__top-left">
+                <ul class="list-unstyled main-header__top-address">
+                    <li>
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt" style="color: #5536e8;"></i>
+                    </div>
+                    <div class="text">
+                        <p>Chettipalayam Coimbatore Tamilnadu</p>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="icon">
+                        <span class="fas fa-envelope"></span>
+                    </div>
+                    <div class="text">
+                        <p>
+                        <a href="mailto:nbatechofficial@gmail.com"
+                            >nbatechofficial@gmail.com</a
+                        >
+                        </p>
+                    </div>
+                    </li>
+                </ul>
+                </div>
+                <div class="main-header__top-right">
+                <div class="main-header__top-right-content">
+                    <ul class="list-unstyled main-header__top-right-menu">
+                    <li><a href="{{url_for('about')}}">About</a></li>
+                    <li><a href="{{url_for('contact')}}">Contact</a></li>
+                    </ul>
+                    <div class="main-header__top-right-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-			</nav>
-		</header>
+                </div>
+            </div>
+            </div>
+            <nav class="main-menu clearfix">
+            <div class="main-menu__wrapper clearfix">
+                <div class="main-menu__left main-menu__left--two">
+                <div class="main-menu__logo">
+                    <a href="{{url_for('index')}}">
+                    <img class="logo-dark" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="" width="135px" height="50px">
+                                    <img class="logo-light" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="">
+                            
+                    </a>
+                </div>
+                <div
+                    class="main-menu__main-menu-box main-menu__main-menu-box--two"
+                >
+                    <a href="#" class="mobile-nav__toggler"
+                    ><i class="fa fa-bars"></i
+                    ></a>
+                    <ul class="main-menu__list">
+                    <li class="dropdown megamenu">
+                        <a href="{{url_for('index')}}">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Services</a>
+                        <ul>
+                        <li><a href="{{url_for('services',type='product_development')}}">Product Development</a></li>
+                        <li><a href="{{url_for('services',type='ui_ux_dev')}}">UI/UX Development</a></li>
+                        <li><a href="{{url_for('services',type='software_dev')}}">Software Development</a></li>
+                        <li><a href="{{url_for('services',type='web_dev')}}">Web Development</a></li>
+                        <li><a href="{{url_for('services',type='mobile_app_dev')}}">Mobile Application</a></li>
+                        <li><a href="{{url_for('services',type='cloud_services')}}">Cloud Solutions</a></li>
+                        <li><a href="{{url_for('services',type='ai_ml')}}">Artificial Intelligence</a></li>
+                        <li><a href="{{url_for('services',type='it_consulting_strategy')}}">IT Consulting</a></li>
+                        <li><a href="{{url_for('services',type='database_management')}}">Database Management</a></li>
+                        <li><a href="{{url_for('services',type='erp_systems')}}">ERP System</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="dropdown">
+                        <a href="{{url_for('about')}}">About</a>
+                    
+                    </li>
+                    <li class="dropdown">
+                        <a href="{{url_for('gallery')}}">Gallery</a>
+                    </li>
+                    <li><a href="{{url_for('contact')}}">Contact</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="main-menu__right">
+                <div class="main-menu__search-call">
+                    <div class="main-menu__call">
+                    <div class="main-menu__call-icon">
+                        <img
+                        src="{{url_for('static',filename='assets/images/icon/main-menu-icon-comment.png')}}"
+                        alt=""
+                        />
+                    </div>
+                    <div class="main-menu__call-number">
+                        <p>Have any question?</p>
+                        <h5>
+                        <a href="tel:926668880000"
+                            ><span>Free</span> +91 9344269970</a
+                        >
+                        </h5>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </nav>
+        </header>
 
 		<div class="stricky-header stricked-menu main-menu">
 			<div class="sticky-header__content"></div><!-- /.sticky-header__content -->
@@ -577,11 +604,10 @@
 										<img src="{{url_for('static',filename='assets/images/user.png')}}" alt="" width="170px" height="170px">
 									</div>
 									<div class="testimonial-one__content">
-										<p class="testimonial-one__text">The platform's easy-to-use interface and diverse features facilitate effective collaboration and learning. Thanks to the exceptional team's work, the seamless experience stands out. 
-											I highly recommend their services for anyone seeking an interactive online platform</p>
+										<p class="testimonial-one__text">Their interactive website with a built-in chatting app has connected users seamlessly, fostering a vibrant exchange of knowledge. It's a game-changer in the realm of online interaction and learning.</p>
 										<div class="testimonial-one__bottom-content">
 											<div class="testimonial-one__client-info">
-												<h5 class="testimonial-one__client-name">John Smith</h5>
+												<h5 class="testimonial-one__client-name">Rahul G</h5>
 												<p class="testimonial-one__client-company">CourseLink</p>
 											</div>
 											<div class="testimonial-one__quote">
@@ -597,14 +623,11 @@
 										<img src="{{url_for('static',filename='assets/images/user.png')}}" alt="" width="170px" height="170px">
 									</div>
 									<div class="testimonial-one__content">
-										<p class="testimonial-one__text">This is due to their excellent service,
-											competitive pricing and customer support. It’s throughly refresing to get
-											such a personal touch. Duis aute lorem ipsum is simply free text irure dolor
-											in reprehenderit in esse nulla pariatur.</p>
+										<p class="testimonial-one__text">Their telegraph signal copier software has streamlined trading strategies, enabling seamless replication of signals for enhanced investment outcomes. A testament to their commitment to empowering traders with cutting-edge technology</p>
 										<div class="testimonial-one__bottom-content">
 											<div class="testimonial-one__client-info">
-												<h5 class="testimonial-one__client-name"></h5>
-												<p class="testimonial-one__client-company">Client of notech company</p>
+												<h5 class="testimonial-one__client-name">Charles</h5>
+												<p class="testimonial-one__client-company">Quant Copier</p>
 											</div>
 											<div class="testimonial-one__quote">
 												<img src="{{url_for('static',filename='assets/images/testimonial/testimonial-1-quote.png')}}" alt="">
@@ -619,10 +642,7 @@
 										<img src="{{url_for('static',filename='assets/images/user.png')}}" alt="" width="170px" height="170px">
 									</div>
 									<div class="testimonial-one__content">
-										<p class="testimonial-one__text">This is due to their excellent service,
-											competitive pricing and customer support. It’s throughly refresing to get
-											such a personal touch. Duis aute lorem ipsum is simply free text irure dolor
-											in reprehenderit in esse nulla pariatur.</p>
+										<p class="testimonial-one__text">Their expertise in crafting a tailored portfolio for doctors is evident in the seamless presentation of skills, achievements, and patient care philosophy. A testament to their dedication to empowering healthcare professionals.</p>
 										<div class="testimonial-one__bottom-content">
 											<div class="testimonial-one__client-info">
 												<h5 class="testimonial-one__client-name">Siraj</h5>
@@ -848,7 +868,7 @@
 					<div class="trusted-source__right">
 						<div class="trusted-source__contact-info">
 							<p>Have any question?</p>
-							<a href="tel:980009850"><span>Free</span> +98 (000)-9850</a>
+							<a href="tel:980009850"><span>Free</span> +91 9344269970</a>
 						</div>
 					</div>
 				</div>
@@ -1073,10 +1093,10 @@
 							<div class="footer-widget__column footer-widget__links clearfix">
 								<h3 class="footer-widget__title">Links</h3>
 								<ul class="footer-widget__links-list list-unstyled clearfix">
-									<li><a href="about.html">About us</a></li>
-									<li><a href="team.html">Meet our team</a></li>
-									<li><a href="blog.html">News & media</a></li>
-									<li><a href="projects-page-1.html">Our projects</a></li>
+									<li><a href="{{url_for('about')}}">About us</a></li>
+									<li><a href="{{url_for('about')}}">Meet our team</a></li>
+									
+									<li><a href="{{url_for('services',type='product_development')}}">Our projects</a></li>
 									<li><a href="{{url_for('contact')}}">Contacts</a></li>
 								</ul>
 							</div>
@@ -1090,7 +1110,7 @@
 											<span class="fas fa-phone"></span>
 										</div>
 										<div class="text">
-											<p><a href="tel:980009850">+91 98765-43210</a></p>
+											<p><a href="tel:980009850">+91 9344269970</a></p>
 										</div>
 									</li>
 									<li>
@@ -1098,7 +1118,7 @@
 											<span class=" fas fa-envelope"></span>
 										</div>
 										<div class="text">
-											<p><a href="mailto:nbatechofficial@gmail.com">info@nbatechsolutions.in</a></p>
+											<p><a href="mailto:nbatechofficial@gmail.com">nbatechofficial@gmail.com</a></p>
 										</div>
 									</li>
 									<li>
@@ -1162,7 +1182,7 @@
 			<ul class="mobile-nav__contact list-unstyled">
 				<li>
 					<i class="fa fa-envelope"></i>
-					<a href="mailto:needhelp@packageName__.com">needhelp@notech.com</a>
+					<a href="mailto:needhelp@packageName__.com">nbatechofficial@gmail.com</a>
 				</li>
 				<li>
 					<i class="fa fa-phone-alt"></i>
