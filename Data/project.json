@@ -1,0 +1,75 @@
+{
+    "0":{
+        "kind":"Web Development Integrated with AI",
+        "name":"Skill Storm",
+        "image_url":"assets/images/project/skill_5.jpeg"
+    },
+    "1":{
+        "kind":"Web Development",
+        "name":"Journey Begins",
+        "image_url":"assets/images/project/journey_3.jpeg"
+    },
+    "2":{
+        "kind":"SEO",
+        "name":"Study partner finder ranks 2nd in google",
+        "image_url":"assets/images/project/Study(SEO).png"
+    },
+    
+    "3":{
+        "kind":"UI/UX Design",
+        "name":"RouteRover",
+        "image_url":"assets/images/project/UI.jpeg"
+    },
+    "4":{
+        "kind":"Mobile App",
+        "name":"Reach",
+        "image_url":"assets/images/project/chat_mobile_2.jpeg"
+    },
+    "5":{
+        "kind":"Web Development With AI",
+        "name":"UF Gaming",
+        "image_url":"assets/images/project/gaming.jpeg"
+    },
+    "6":{
+        "kind":"UI/UX Design",
+        "name":"INAS",
+        "image_url":"assets/images/project/UI_1.jpeg"
+    },
+    "7":{
+        "kind":"Web Development",
+        "name":"NAYAH Foods",
+        "image_url":"assets/images/project/prod_3.jpeg"
+    },
+    "8":{
+        "kind":"UI/UX Design",
+        "name":"Style Avenue",
+        "image_url":"assets/images/project/UI_2.jpeg"
+    },
+    "9":{
+        "kind":"SEO",
+        "name":"Sitapurnethralaya ranks 2nd in google",
+        "image_url":"assets/images/project/sita.png"
+    },
+    "10":{
+        "kind":"Web Development",
+        "name":"Sitapurnethralaya",
+        "image_url":"assets/images/project/sita_2.png"
+    },
+    "11":{
+        "kind":"CMS Dashboard",
+        "name":"Supervisor Dashboard",
+        "image_url":"assets/images/project/CMS_3.jpeg"
+    },
+    "12":{
+        "kind":"Software",
+        "name":"Quant Copier",
+        "image_url":"assets/images/project/tg_bot_4.png"
+    },
+    "13":{
+        "kind":"Mobile App",
+        "name":"Bus Ease",
+        "image_url":"assets/images/project/bus_mob_1.jpeg"
+    }
+
+    
+}

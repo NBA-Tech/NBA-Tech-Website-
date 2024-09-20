@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NBA Tech	</title>
+	<meta charset="UTF-8">
+    <meta name="description" content="we are the technology service providers where we do lot things like website development and ML and bots">
+    <meta name="keywords" content="web development, mobile app development, artificial intelligence, chatbots, virtual assistants, software development, frontend development, backend development, full-stack development, responsive web design, iOS app development, Android app development, cross-platform app development, user experience design, UI/UX design, web design, mobile design, website optimization, SEO, search engine optimization, digital marketing, social media marketing, content management system, CMS, e-commerce development, cloud computing, machine learning, natural language processing, computer vision, data analytics, data visualization, blockchain development, Internet of Things, IoT, augmented reality, AR, virtual reality, VR, game development, mobile game development, web application development, progressive web apps, PWA, user interface design, user interaction design, website security, cybersecurity, API development, RESTful APIs, microservices, serverless architecture, cloud services, AWS, Azure, Google Cloud, Firebase, database management, SQL, NoSQL, DevOps, continuous integration, continuous deployment, agile development, project management, software testing, quality assurance, software maintenance, IT consulting, technology solutions, innovation, digital transformation, startup, small business, enterprise, scalable solutions, custom software development, software-as-a-service, SaaS, platform-as-a-service, PaaS, infrastructure-as-a-service, IaaS, web hosting, mobile app hosting, deployment services, technical support, bug fixing, code review, performance optimization, version control, Git, GitHub, Bitbucket, code collaboration, open-source software, community-driven development, technology trends, future of technology, emerging technologies, industry expertise">
+
+    <!-- Open Graph tags for social media -->
+    <meta property="og:title" content="nba tech- Web, Mobile App, AI, Bots">
+    <meta property="og:description" content="we are the technology service providers where we do lot things like website development and ML and bots">
+    <meta property="og:url" content="https://nbatech.onrender.com">
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for('static', filename='assets/images/logo.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='assets/images/logo.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='assets/images/logo.png') }}" />
+    <link rel="manifest" href="{{ url_for('static', filename='assets/images/favicons/site.webmanifest') }}" />
+	<meta name="description" content="Notech HTML Template For It Solution" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/2.0.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/bootstrap/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/animate/animate.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/animate/custom-animate.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/fontawesome/css/all.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/jarallax/jarallax.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/nouislider/nouislider.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/nouislider/nouislider.pips.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/odometer/odometer.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/swiper/swiper.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/notech-icons/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/notech-two-icons/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/tiny-slider/tiny-slider.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/reey-font/stylesheet.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/owl-carousel/owl.carousel.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/owl-carousel/owl.theme.default.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/bxslider/jquery.bxslider.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/bootstrap-select/css/bootstrap-select.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/vegas/vegas.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/jquery-ui/jquery-ui.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/timepicker/timePicker.css') }}" />
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/notech.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/notech-responsive.css') }}" />
+
+
+    <!-- modes css -->
+    <link rel="stylesheet" id="jssMode" href="{{ url_for('static', filename='assets/css/notech-light.css') }}">
+
+
+    <!-- toolbar css -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/toolbar/css/toolbar.css') }}">
+	<meta name="google-site-verification" content="ZU4mFPLHcptYGuXfSGc_x5ZWNIJA-2DwMwnp-A-oiOs" />
+</head>
+
+<body>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-53CZ8V9B12"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-53CZ8V9B12');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7904865582680037"
+     crossorigin="anonymous"></script>
+
+
+
+	<!-- style switcher -->
+
+	<!-- end style switcher -->
+
+
+	<div class="preloader">
+		<img class="preloader__image" width="200" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="" />
+	</div>
+	<!-- /.preloader -->
+	<div class="page-wrapper">
+		<header class="main-header clearfix">
+            <div class="main-header__top">
+            <div class="main-header__top-inner clearfix">
+                <div class="main-header__top-left">
+                <ul class="list-unstyled main-header__top-address">
+                    <li>
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt" style="color: #5536e8;"></i>
+                    </div>
+                    <div class="text">
+                        <p>Chettipalayam Coimbatore Tamilnadu</p>
+                    </div>
+                    </li>
+                    <li>
+                    <div class="icon">
+                        <span class="fas fa-envelope"></span>
+                    </div>
+                    <div class="text">
+                        <p>
+                        <a href="mailto:nbatechofficial@gmail.com"
+                            >nbatechofficial@gmail.com</a
+                        >
+                        </p>
+                    </div>
+                    </li>
+                </ul>
+                </div>
+                <div class="main-header__top-right">
+                <div class="main-header__top-right-content">
+                    <ul class="list-unstyled main-header__top-right-menu">
+                    <li><a href="{{url_for('about')}}">About</a></li>
+                    <li><a href="{{url_for('contact')}}">Contact</a></li>
+                    </ul>
+                    <div class="main-header__top-right-social">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <nav class="main-menu clearfix">
+            <div class="main-menu__wrapper clearfix">
+                <div class="main-menu__left main-menu__left--two">
+                <div class="main-menu__logo">
+                    <a href="{{url_for('index')}}">
+                    <img class="logo-dark" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="" width="135px" height="50px">
+                                    <img class="logo-light" src="{{url_for('static',filename='assets/images/logo.png')}}" alt="">
+                            
+                    </a>
+                </div>
+                <div
+                    class="main-menu__main-menu-box main-menu__main-menu-box--two"
+                >
+                    <a href="#" class="mobile-nav__toggler"
+                    ><i class="fa fa-bars"></i
+                    ></a>
+                    <ul class="main-menu__list">
+                    <li class="dropdown megamenu">
+                        <a href="{{url_for('index')}}">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Services</a>
+                        <ul>
+                        <li><a href="{{url_for('services',type='product_development')}}">Product Development</a></li>
+                        <li><a href="{{url_for('services',type='ui_ux_dev')}}">UI/UX Development</a></li>
+                        <li><a href="{{url_for('services',type='software_dev')}}">Software Development</a></li>
+                        <li><a href="{{url_for('services',type='web_dev')}}">Web Development</a></li>
+                        <li><a href="{{url_for('services',type='mobile_app_dev')}}">Mobile Application</a></li>
+                        <li><a href="{{url_for('services',type='cloud_services')}}">Cloud Solutions</a></li>
+                        <li><a href="{{url_for('services',type='ai_ml')}}">Artificial Intelligence</a></li>
+                        <li><a href="{{url_for('services',type='it_consulting_strategy')}}">IT Consulting</a></li>
+                        <li><a href="{{url_for('services',type='database_management')}}">Database Management</a></li>
+                        <li><a href="{{url_for('services',type='erp_systems')}}">ERP System</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="dropdown">
+                        <a href="{{url_for('about')}}">About</a>
+                    
+                    </li>
+                    <li class="dropdown">
+                        <a href="{{url_for('gallery')}}">Gallery</a>
+                    </li>
+                    <li><a href="{{url_for('contact')}}">Contact</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="main-menu__right">
+                <div class="main-menu__search-call">
+                    <div class="main-menu__call">
+                    <div class="main-menu__call-icon">
+                        <img
+                        src="{{url_for('static',filename='assets/images/icon/main-menu-icon-comment.png')}}"
+                        alt=""
+                        />
+                    </div>
+                    <div class="main-menu__call-number">
+                        <p>Have any question?</p>
+                        <h5>
+                        <a href="mailto : nbatechofficial@gmail.com"
+                            ><span></span> nbatechofficial@gmail.com</a
+                        >
+                        </h5>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </nav>
+        </header>
+
+		<div class="stricky-header stricked-menu main-menu">
+			<div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+		</div><!-- /.stricky-header -->
+
+		<!--Main Slider Start-->
+		<section class="main-slider" id="home">
+			<div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
+                "effect": "fade",
+                "pagination": {
+                "el": "#main-slider-pagination",
+                "type": "bullets",
+                "clickable": true
+                },
+                "navigation": {
+                "nextEl": "#main-slider__swiper-button-next",
+                "prevEl": "#main-slider__swiper-button-prev"
+                },
+                "autoplay": {
+                "delay": 5000
+                }}'>
+				<div class="swiper-wrapper">
+
+					<div class="swiper-slide">
+						<div class="image-layer"
+							style="background-image: url(../static/assets/images/backgrounds/main-slider-1-1.jpg);"></div>
+						<!-- /.image-layer -->
+						<div class="main-slider__shape-1">
+							<img src="{{url_for('static',filename='assets/images/shapes/main-slider-shape-1.png')}}" alt="">
+						</div>
+						<div class="main-slider__shape-2">
+							<img src="{{url_for('static',filename='assets/images/shapes/main-slider-shape-2.png')}}" alt="">
+						</div>
+						<div class="main-slider__shape-3">
+							<img src="{{url_for('static',filename='assets/images/shapes/main-slider-shape-3.png')}}" alt="">
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-xl-12">
+									<div class="main-slider__content">
+										<p>It Software Solution &</p>
+										<h2>Technology</h2>
+										<div class="main-slider__btn-video-box">
+											<div class="main-slider__btn-box">
+												<a href="{{url_for('about')}}" class="thm-btn main-slider__btn">Discover more</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="image-layer"
+							style="background-image: url(../static/assets/images/backgrounds/main-slider-1-2.jpg);"></div>
+						<!-- /.image-layer -->
+						<div class="main-slider__shape-1">
+							<img src="{{url_for('static',filename='assets/images/shapes/main-slider-shape-1.png')}}" alt="">
+						</div>
+						<div class="main-slider__shape-2">
+							<img src="{{url_for('static',filename='assets/images/shapes/main-slider-shape-2.png')}}" alt="">
+						</div>
+						<div class="main-slider__shape-3">
+							<img src="{{url_for('static',filename='assets/images/shapes/main-slider-shape-3.png')}}" alt="">
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-xl-12">
+									<div class="main-slider__content">
+										<p>It Software Solution &</p>
+										<h2>Technology</h2>
+										<div class="main-slider__btn-video-box">
+											<div class="main-slider__btn-box">
+												<a href="{{url_for('about')}}" class="thm-btn main-slider__btn">Discover more</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-slide">
+						<div class="image-layer"
+							style="background-image: url(../static/assets/images/backgrounds/main-slider-1-3.jpg);"></div>
+						<!-- /.image-layer -->
+						<div class="main-slider__shape-1">
+							<img src="{{url_for('static',filename='assets/images/shapes/main-slider-shape-1.png')}}" alt="">
+						</div>
+						<div class="main-slider__shape-2">
+							<img src="{{url_for('static',filename='assets/images/shapes/main-slider-shape-2.png')}}" alt="">
+						</div>
+						<div class="main-slider__shape-3">
+							<img src="{{url_for('static',filename='assets/images/shapes/main-slider-shape-3.png')}}" alt="">
+						</div>
+						<div class="container">
+							<div class="row">
+								<div class="col-xl-12">
+									<div class="main-slider__content">
+										<p>It Software Solution &</p>
+										<h2>Technology</h2>
+										<div class="main-slider__btn-video-box">
+											<div class="main-slider__btn-box">
+												<a href="{{url_for('about')}}" class="thm-btn main-slider__btn">Discover more</a>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!-- If we need navigation buttons -->
+				<div class="swiper-pagination" id="main-slider-pagination"></div>
+
+			</div>
+		</section>
+		<!--Main Slider End-->
+
+		<!--Get Solutions Start-->
+		<section class="get-solutions">
+			<div class="container">
+				<div class="get-solutions__inner">
+					<p class="get-solutions__text">Stop wasting time and money on technology. <a
+							href="{{url_for('about')}}">Explore
+							NBA Tech</a> and get best solutions.</p>
+				</div>
+			</div>
+		</section>
+		<!--Get Solutions End-->
+
+		<!--Feature One Start-->
+		<section class="feature-one">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+						<!--Feature One Single-->
+						<div class="feature-one__single">
+							<div class="feature-one__img">
+								<img src="{{url_for('static',filename='assets/images/resources/feature-1-1.jpg')}}" alt="">
+								<div class="feature-one__title-box">
+									<h3 class="feature-one__title"><a href="{{url_for('services',type='product_development')}}">Manage IT services</a></h3>
+								</div>
+								<div class="feature-one__hover-content">
+									<div class="feature-one__icon">
+										<i class="fa-solid fa-database fa-2xl" style="color: #2be4ac;"></i>
+									</div>
+									<h3 class="feature-one__hover-title"><a href="{{url_for('services',type='product_development')}}">Manage IT services</a>
+									</h3>
+									<p class="feature-one__hover-text">Delivering top-tier IT services encompassing mobile/web, software, AI, intelligent bots, cloud solutions, and hosting</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+						<!--Feature One Single-->
+						<div class="feature-one__single">
+							<div class="feature-one__img">
+								<img src="{{url_for('static',filename='assets/images/resources/feature-1-2.jpg')}}" alt="">
+								<div class="feature-one__title-box">
+									<h3 class="feature-one__title"><a href="{{url_for('services',type='ui_ux_dev')}}">UI/UX Design Services</a></h3>
+								</div>
+								<div class="feature-one__hover-content">
+									<div class="feature-one__icon">
+										<i class="fa-solid fa-paint-roller fa-2xl" style="color: #2be4ac;"></i>
+									</div>
+									<h3 class="feature-one__hover-title"><a href="{{url_for('services',type='ui_ux_dev')}}">UI/UX Design Services</a></h3>
+									<p class="feature-one__hover-text">Crafting exceptional UI/UX designs that captivate users, elevate brands, and drive seamless digital experiences</p>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+						<!--Feature One Single-->
+						<div class="feature-one__single">
+							<div class="feature-one__img">
+								<img src="{{url_for('static',filename='assets/images/resources/feature-1-3.jpg')}}" alt="">
+								<div class="feature-one__title-box">
+									<h3 class="feature-one__title"><a href="about.html">Digital experience</a></h3>
+								</div>
+								<div class="feature-one__hover-content">
+									<div class="feature-one__icon">
+										<i class="fa-solid fa-computer fa-2xl" style="color: #2be4ac;"></i>
+									</div>
+									<h3 class="feature-one__hover-title"><a href="about.html">Digital experience</a>
+									</h3>
+									<p class="feature-one__hover-text">Elevating online presence with expert SEO, strategic online marketing, personalized training, and online assistance, driving visibility and fostering growth</p>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Feature One End-->
+
+		<!--Get To Know Start-->
+		<section class="get-to-know" id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6">
+						<div class="get-to-know__left wow slideInLeft" data-wow-delay="100ms"
+							data-wow-duration="2500ms">
+							<div class="get-to-know__img-box">
+								<div class="get-to-know__img">
+									<img src="{{url_for('static',filename='assets/images/resources/get-to-know-img-1.jpg')}}" alt="">
+								</div>
+								<div class="get-to-know__small-img">
+									<img src="{{url_for('static',filename='assets/images/resources/get-to-know-small-img.jpg')}}" alt="">
+								</div>
+								<div class="get-to-know__client-box">
+									<h3 class="odometer" data-count="50">00</h3>
+									<span class="get-to-know__plus">+</span>
+									<p class="get-to-know__client-text">worldwide clients</p>
+								</div>
+								<div class="get-to-know-shape-1"><img src="{{url_for('static',filename='assets/images/shapes/get-to-know-shape-1.png')}}"
+										alt=""></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6">
+						<div class="get-to-know__right">
+							<div class="section-title text-left">
+								<div class="section-title__tagline-box">
+									<span class="section-title__tagline">Get to know us</span>
+									<div class="section-title-shape">
+										<img src="{{url_for('static',filename='assets/images/shapes/section-title-shape.png')}}" alt="">
+									</div>
+								</div>
+								<h2 class="section-title__title">Easy solutions for your IT problems</h2>
+							</div>
+							<p class="get-to-know__text">Fusing cutting-edge IT services with captivating UI/UX designs, expert SEO, and strategic online marketing to propel businesses into the digital forefront with innovation, visibility, and growth</p>
+							<ul class="list-unstyled get-to-know__points">
+								<li>
+									<div class="icon">
+										<span class="fas fa-check"></span>
+									</div>
+									<div class="text">
+										<p>Delivering cost-effective solutions while ensuring high customer satisfaction.</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<span class="fas fa-check"></span>
+									</div>
+									<div class="text">
+										<p>Providing professional services with ongoing maintenance for sustained excellence.</p>
+									</div>
+								</li>
+							</ul>
+							<div class="get-to-know__it-solutions">
+								<div class="get-to-know__it-solutions-icon">
+									<span class="fas fa-chart-line"></span>
+								</div>
+								<div class="get-to-know__it-solutions-text-box">
+									<p class="get-to-know__it-solutions-text">Stop worrying, we take care of your
+										technology problems.</p>
+								</div>
+							</div>
+							<a href="{{url_for('about')}}" class="get-to-know__btn thm-btn">Discover more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Get To Know End-->
+
+		<!--Services One Start-->
+		<section class="services-one" id="services"
+			style="background-image: url(../static/assets/images/shapes/service-bg-1-1.png);">
+			<div class="service-one__shape-1"></div><!-- /.service-one__shape-1 -->
+			<div class="service-one__shape-2"></div><!-- /.service-one__shape-2 -->
+			<div class="container">
+				<div class="services-one__top">
+					<div class="row">
+						<div class="col-xl-6 col-lg-6">
+							<div class="services-one__top-left">
+								<div class="section-title text-left">
+									<div class="section-title__tagline-box">
+										<span class="section-title__tagline">What we’re offering</span>
+										<div class="section-title-shape">
+											<img src="{{url_for('static',filename='assets/images/shapes/section-title-shape.png')}}" alt="">
+										</div>
+									</div>
+									<h2 class="section-title__title">Services we’re providing to our customers</h2>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-6 col-lg-6">
+							<div class="services-one__top-right">
+								<p class="services-one__top-text">At NBA Tech, we deliver tailored IT solutions for businesses. Our services span software development, and cloud computing. With a focus on innovation and reliability, we optimize efficiency and drive growth</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="services-one__bottom">
+					<ul class="list-unstyled services-one__list">
+						<li class="services-one__single">
+							<div class="services-one__content">
+								<div class="services-one__icon">
+									<span class="fas fa-laptop-code"></span>
+								</div>
+								<h3 class="services-one__title"><a href="{{url_for('services',type='product_development')}}">Product <br>
+										development</a></h3>
+								<p class="services-one__text">Crafting Innovative Solutions<br> for Mobile, Web, Software, and Bots</p>
+							</div>
+						</li>
+						<li class="services-one__single">
+							<div class="services-one__content">
+								<div class="services-one__icon">
+									<span class="fas fa-brain"></span>
+								</div>
+								<h3 class="services-one__title"><a href="{{url_for('services',type='ui_ux_dev')}}">UI/UX <br> designing</a>
+								</h3>
+								<p class="services-one__text">Crafting Engaging UI/UX Experiences for Digital Platforms</p>
+							</div>
+						</li>
+						<li class="services-one__single">
+							<div class="services-one__content">
+								<div class="services-one__icon">
+									<span class="fas fa-cog"></span>
+								</div>
+								<h3 class="services-one__title"><a href="{{url_for('services',type='ui_ux_dev')}}">Digital <br>
+										marketing</a></h3>
+								<p class="services-one__text">Elevating Your Online Presence with SEO and<br> Digital Marketing</p>
+							</div>
+						</li>
+						<li class="services-one__single">
+							<div class="services-one__content">
+								<div class="services-one__icon">
+									<span class="fa-solid fa-robot"></span>
+								</div>
+								<h3 class="services-one__title"><a href="{{url_for('services',type='ai_ml')}}">Artificial <br>
+									Intelligence</a></h3>
+								<p class="services-one__text">Pioneering AI Solutions for Tomorrow's <br>Challenges</p>
+							</div>
+						</li>
+						<li class="services-one__single">
+							<div class="services-one__content">
+								<div class="services-one__icon">
+									<span class="fa-solid fa-cloud"></span>
+								</div>
+								<h3 class="services-one__title"><a href="{{url_for('services',type='cloud_services')}}">Cloud <br> solutions</a></h3>
+								<p class="services-one__text">Scaling Your Business with Cutting-Edge <br>Cloud Solutions</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!--Services One End-->
+
+		<!--Business From Start-->
+		<section class="business-from">
+			<div class="business-from-bg-box">
+				<div class="business-from-bg jarallax" data-jarallax data-speed="0.2" data-imgPosition="50% 0%"
+					style="background-image: url(../static/assets/images/backgrounds/business-from-bg.jpg);"></div>
+			</div>
+			<div class="container">
+				<div class="business-from__inner text-center">
+					<p class="business-from__sub-title">Business from great idea to</p>
+					<h2 class="business-from__title">launching</h2>
+					<div class="business-from__btn-box">
+						<a href="{{url_for('contact')}}" class="business-from__btn thm-btn">Contact us now</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Business From End-->
+
+		<!--Testimonial One Start-->
+		<section class="testimonial-one" id="testimonials">
+			<div class="testimonial-one__inner">
+				<div class="testimonial-one-shape float-bob-x">
+					<img src="{{url_for('static',filename='assets/images/shapes/testimonial-one-shape.png')}}" alt="">
+				</div>
+				<div class="container">
+					<div class="testimonial-one__inner-content">
+						<div class="owl-carousel owl-theme thm-owl__carousel testimonial-one__carousel"
+							data-owl-options='{
+                            "loop": true,
+                            "autoplay": true,
+                            "margin": 30,
+                            "nav": false,
+                            "dots": true,
+                            "smartSpeed": 500,
+                            "autoplayTimeout": 10000,
+                            "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+                            "responsive": {
+                                "0": {
+                                    "items": 1
+                                },
+                                "768": {
+                                    "items": 1
+                                },
+                                "992": {
+                                    "items": 1
+                                },
+                                "1200": {
+                                    "items": 1
+                                }
+                            }
+                        }'>
+							<div class="testimonial-one__single">
+								<div class="testimonial-one__top-content">
+									<div class="testimonial-one__img">
+										<img src="{{url_for('static',filename='assets/images/user.png')}}" alt="" width="170px" height="170px">
+									</div>
+									<div class="testimonial-one__content">
+										<p class="testimonial-one__text">Their interactive website with a built-in chatting app has connected users seamlessly, fostering a vibrant exchange of knowledge. It's a game-changer in the realm of online interaction and learning.</p>
+										<div class="testimonial-one__bottom-content">
+											<div class="testimonial-one__client-info">
+												<h5 class="testimonial-one__client-name">Rahul G</h5>
+												<p class="testimonial-one__client-company">CourseLink</p>
+											</div>
+											<div class="testimonial-one__quote">
+												<img src="{{url_for('static',filename='assets/images/testimonial/testimonial-1-quote.png')}}" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial-one__single">
+								<div class="testimonial-one__top-content">
+									<div class="testimonial-one__img">
+										<img src="{{url_for('static',filename='assets/images/user.png')}}" alt="" width="170px" height="170px">
+									</div>
+									<div class="testimonial-one__content">
+										<p class="testimonial-one__text">Their telegraph signal copier software has streamlined trading strategies, enabling seamless replication of signals for enhanced investment outcomes. A testament to their commitment to empowering traders with cutting-edge technology</p>
+										<div class="testimonial-one__bottom-content">
+											<div class="testimonial-one__client-info">
+												<h5 class="testimonial-one__client-name">Charles</h5>
+												<p class="testimonial-one__client-company">Quant Copier</p>
+											</div>
+											<div class="testimonial-one__quote">
+												<img src="{{url_for('static',filename='assets/images/testimonial/testimonial-1-quote.png')}}" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="testimonial-one__single">
+								<div class="testimonial-one__top-content">
+									<div class="testimonial-one__img">
+										<img src="{{url_for('static',filename='assets/images/user.png')}}" alt="" width="170px" height="170px">
+									</div>
+									<div class="testimonial-one__content">
+										<p class="testimonial-one__text">Their expertise in crafting a tailored portfolio for doctors is evident in the seamless presentation of skills, achievements, and patient care philosophy. A testament to their dedication to empowering healthcare professionals.</p>
+										<div class="testimonial-one__bottom-content">
+											<div class="testimonial-one__client-info">
+												<h5 class="testimonial-one__client-name">Siraj</h5>
+												<p class="testimonial-one__client-company">SitapurNethralaya</p>
+											</div>
+											<div class="testimonial-one__quote">
+												<img src="{{url_for('static',filename='assets/images/testimonial/testimonial-1-quote.png')}}" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Testimonial One End-->
+
+		<!--Project One Start-->
+		<section class="project-one" id="projects">
+			<div class="project-one__inner">
+				<div class="container">
+					<div class="section-title text-center">
+						<div class="section-title__tagline-box">
+							<span class="section-title__tagline">Recently completed work</span>
+							<div class="section-title-shape">
+								<img src="{{url_for('static',filename='assets/images/shapes/section-title-shape.png')}}" alt="">
+							</div>
+						</div>
+						<h2 class="section-title__title">Our latest projects</h2>
+					</div>
+					<div class="row">
+<style>
+	.project-two__content{
+		margin-top:0px;
+		padding-top:0px
+
+	}
+</style>						
+					<section class="project-page-two project-page-two--carousel">
+			<div class="container">
+				<div class="thm-owl__carousel owl-theme owl-carousel carousel--have-shadow carousel-dot-style-1"
+					data-owl-options='{
+					"loop": true,
+					"autoplay": true,
+					"margin": 0,
+					"items": 1,
+					"nav": false,
+					"dots": true,
+					"smartSpeed": 500,
+					"autoplayTimeout": 10000,
+					"navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+					"responsive": {
+						"0": {
+							"items": 1
+						},
+						"768": {
+							"items": 2,
+							"margin": 30
+						},
+						"992": {
+							"items": 3,
+							"margin": 30
+						}
+					}
+				}'>
+				{% for i in range(project_data['length']) %}
+					{% set j = i|string %}
+					<div class="item">
+						<!-- Project Page Two Single -->
+						<div class="project-two__single">
+							<div class="project-two__img">
+								<img src="{{ url_for('static', filename=project_data['project'][j]['image_url']) }}" style="object-fit: contain;" width="500" height="300" alt="">
+
+							</div>
+							<div class="project-two__content">
+								<p class="project-two__sub-title">{{ project_data['project'][j]['kind'] }}</p>
+								<h3 class="project-two__title"><a href="project-details.html">{{ project_data['project'][j]['name'] }}</a></h3>
+								<!-- <div class="project-two__arrow">
+									<a href="project-details.html"><i class="fa fa-long-arrow-alt-right"></i></a>
+								</div> -->
+							</div>
+						</div>
+					</div>
+				{% endfor %}
+
+					
+
+					
+
+
+				</div>
+
+		
+				</div>
+			</div>
+		</section>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Project One End-->
+
+		<!--Tech Services Start-->
+		<section class="tech-services">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-6">
+						<div class="tech-services__left">
+							<div class="tech-services__img-box wow slideInLeft" data-wow-delay="100ms"
+								data-wow-duration="2500ms">
+								<div class="tech-services__img">
+									<img src="{{ url_for('static', filename='assets/images/resources/tech-services-img-1.jpg')}}" alt="">
+								</div>
+								<div class="tech-services__img-content">
+									<p class="tech-services__img-text">Transforming visions <br>into victories with<br> NBA tech solutions<br></p>
+									<div class="tech-services__learn-more">
+										<a href="about.html">Learn more<i class="fa fa-long-arrow-alt-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6">
+						<div class="tech-services__right">
+							<div class="section-title text-left">
+								<div class="section-title__tagline-box">
+									<span class="section-title__tagline">Stay protected</span>
+									<div class="section-title-shape">
+										<img src="{{ url_for('static', filename='assets/images/shapes/section-title-shape.png')}}" alt="">
+									</div>
+								</div>
+								<h2 class="section-title__title">Tech services for your business ideas</h2>
+							</div>
+							<p class="tech-services__text">NBA Tech offers tailored technological solutions, from software development to digital marketing. We combine cutting-edge tech with industry expertise to drive growth and efficiency for your venture. Let us turn your ideas into reality with innovative solutions.</p>
+							<ul class="list-unstyled tech-services__points">
+								<li>
+									<div class="icon">
+										<span class="fas fa-check"></span>
+									</div>
+									<div class="content">
+										<h4>We deliver perfect solutions</h4>
+										<p>Consistent delivery of flawless solutions, ensuring perfection every time.</p>
+									</div>
+								</li>
+								<li>
+									<div class="icon">
+										<span class="fas fa-check"></span>
+									</div>
+									<div class="content">
+										<h4>We work with global brands</h4>
+										<p>Trusted by global brands for Unyielding dedication to excellence.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Tech Services End-->
+
+		<!--Counter One Start-->
+		<section class="counter-one">
+			<div class="counter-one__bg" style="background-image: url(../static/assets/images/backgrounds/funfact-bg-1-1.png);">
+			</div><!-- /.counter-one__bg -->
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12">
+						<ul class="list-unstyled counter-one__list">
+							<li class="counter-one__single wow fadeInUp" data-wow-delay="100ms">
+								<div class="counter-one__icon">
+									<span class="fa-solid fa-briefcase"></span>
+								</div>
+								<h3 class="odometer" data-count="3">00</h3>
+								<span class="counter-one__plus">+</span>
+								<p class="counter-one__title">Years of experience</p>
+								<p class="counter-one__text">We at NBA Tech Solutions have gerat experience in resolving our client's needs</p>
+							</li>
+							<li class="counter-one__single wow fadeInUp" data-wow-delay="200ms">
+								<div class="counter-one__icon">
+									<span class="fas fa-laptop-code"></span>
+								</div>
+								<h3 class="odometer" data-count="227">00</h3>
+								<p class="counter-one__title">IT problems solved</p>
+								<p class="counter-one__text">We at NBA Tech Solutions have developed various softwares</p>
+							</li>
+							<li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
+								<div class="counter-one__icon">
+									<span class="fa-solid fa-thumbs-up"></span>
+								</div>
+								<h3 class="odometer" data-count="64">00</h3>
+								<p class="counter-one__title">Satisfied clients</p>
+								<p class="counter-one__text">Our clients have given us good reviews for satisfying their needs</p>
+							</li>
+							<li class="counter-one__single wow fadeInUp" data-wow-delay="300ms">
+								<div class="counter-one__icon">
+									<span class="fa fa-users"></span>
+								</div>
+								<h3 class="odometer" data-count="10">00</h3>
+								<span class="counter-one__plus">+</span>
+								<p class="counter-one__title">Pro team members</p>
+								<p class="counter-one__text">Our members work tirelessly to fulfil the client needs</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Counter One End-->
+
+		<!--Trusted Source Start-->
+		<section class="trusted-source">
+			<div class="container">
+				<div class="trusted-source__inner wow fadeInUp" data-wow-delay="300ms">
+					<div class="trusted-source__left">
+						<h3 class="trusted-source__content">Trusted source to<br>back your bussiness</h3>
+						<div class="trusted-source__icon">
+							<img src="{{ url_for('static', filename='assets/images/icon/trusted-source-icon.png')}}" alt="">
+						</div>
+					</div>
+					<div class="trusted-source__right">
+						<div class="trusted-source__contact-info">
+							<p>Have any question?</p>
+							<a href="tel:980009850"><span></span> nbatechofficial@gmail.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Trusted Source End-->
+
+		<!--Helping Start-->
+		<section class="helping">
+			<div class="helping-wrapper">
+				<div class="helping__left">
+					<div class="helping__left-bg"
+						style="background-image: url(../static/assets/images/backgrounds/helping-left-bg.jpg);"></div>
+				</div>
+				<div class="helping__right">
+					<div class="helping-shape-1  wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
+						<img src="{{ url_for('static', filename='assets/images/shapes/helping-shape-1.png')}}" alt="">
+					</div>
+					<div class="helping__right-content">
+						<div class="section-title text-left">
+							<div class="section-title__tagline-box">
+								<span class="section-title__tagline">Technology solution</span>
+								<div class="section-title-shape">
+									<img src="{{ url_for('static', filename='assets/images/shapes/section-title-shape.png')}}" alt="">
+								</div>
+							</div>
+							<h2 class="section-title__title">Helping businesses around the nation</h2>
+						</div>
+						<p class="helping__text">We build Softwares and Websites for your bussiness</p>
+						<ul class="list-unstyled helping__points">
+							<!-- <li>
+								<div class="icon">
+									<span class="fa-solid fa-user-shield"></span>
+								</div>
+								<h3 class="helping__title">Website Development</h3>
+								<p class="helping__text-2">We build Dynamic websites for your bussiness</p>
+							</li>
+							<li>
+								<div class="icon">
+									<span class="fa fa-hdd-o"></span>
+								</div>
+								<h3 class="helping__title">Software Development</h3>
+								<p class="helping__text-2">We develop softwares for your bussiness</p>
+							</li>
+							<li>
+								<div class="icon">
+									<span class="icon-backup-copy"></span>
+								</div>
+								<h3 class="helping__title">Mobile Application</h3>
+								<p class="helping__text-2">We develop mobile applications for your needs</p>
+							</li> -->
+							<li>
+								<div class="icon">
+									<i class="fa-solid fa-box fa-2xl" style="color: #6653e8;"></i>
+								</div>
+								<h3 class="helping__title">Product Development</h3>
+								<p class="helping__text-2">We develop web/mobile applications, softwares</p>
+							</li>
+							<li>
+								<div class="icon">
+									<i class="fa-solid fa-cloud fa-2xl" style="color: #6653e8;"></i>
+								</div>
+								<h3 class="helping__title">Cloud Solutions</h3>
+								<p class="helping__text-2">We develop cloud based applications for your needs</p>
+							</li>
+							<li>
+								<div class="icon">
+									<i class="fa-solid fa-store fa-2xl" style="color: #6653e8;"></i>
+								</div>
+								<h3 class="helping__title">Digital Marketing</h3>
+								<p class="helping__text-2">We develop applications to market your products</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Helping End-->
+
+		<!--Blog One Start-->
+		<!-- <section class="blog-one" id="blog">
+			<div class="container">
+				<div class="section-title text-center">
+					<div class="section-title__tagline-box">
+						<span class="section-title__tagline">What’s happening</span>
+						<div class="section-title-shape">
+							<img src="assets/images/shapes/section-title-shape.png" alt="">
+						</div>
+					</div>
+					<h2 class="section-title__title">News & articles</h2>
+				</div>
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
+						Blog One single
+						<div class="blog-one__single">
+							<div class="blog-one__img">
+								<img src="assets/images/blog/blog-1-1.jpg" alt="">
+								<div class="blog-one__tag">
+									<p>Tech</p>
+								</div>
+								<a href="blog-details.html">
+									<span class="blog-one__plus"></span>
+								</a>
+							</div>
+							<div class="blog-one__content">
+								<ul class="list-unstyled blog-one__meta">
+									<li><a href="blog-details.html"><i class="far fa-clock"></i> 8 Jan, 2022</a>
+									</li>
+									<li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Layerdrops</a>
+									</li>
+								</ul>
+								<h3 class="blog-one__title">
+									<a href="blog-details.html">Easy to use software new innovation</a>
+								</h3>
+								<div class="blog-one__bottom">
+									<a href="blog-details.html">Learn more<i class="fa fa-long-arrow-alt-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
+						Blog One single
+						<div class="blog-one__single">
+							<div class="blog-one__img">
+								<img src="assets/images/blog/blog-1-2.jpg" alt="">
+								<div class="blog-one__tag">
+									<p>solution</p>
+								</div>
+								<a href="blog-details.html">
+									<span class="blog-one__plus"></span>
+								</a>
+							</div>
+							<div class="blog-one__content">
+								<ul class="list-unstyled blog-one__meta">
+									<li><a href="blog-details.html"><i class="far fa-clock"></i> 8 Jan, 2022</a>
+									</li>
+									<li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Layerdrops</a>
+									</li>
+								</ul>
+								<h3 class="blog-one__title">
+									<a href="blog-details.html">What is holding back the IT solution.</a>
+								</h3>
+								<div class="blog-one__bottom">
+									<a href="blog-details.html">Learn more<i class="fa fa-long-arrow-alt-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
+						Blog One single
+						<div class="blog-one__single">
+							<div class="blog-one__img">
+								<img src="assets/images/blog/blog-1-3.jpg" alt="">
+								<div class="blog-one__tag">
+									<p>Tech</p>
+								</div>
+								<a href="blog-details.html">
+									<span class="blog-one__plus"></span>
+								</a>
+							</div>
+							<div class="blog-one__content">
+								<ul class="list-unstyled blog-one__meta">
+									<li><a href="blog-details.html"><i class="far fa-clock"></i> 8 Jan, 2022</a>
+									</li>
+									<li><a href="blog-details.html"><i class="far fa-user-circle"></i> by Layerdrops</a>
+									</li>
+								</ul>
+								<h3 class="blog-one__title">
+									<a href="blog-details.html">Podcasting operational change management</a>
+								</h3>
+								<div class="blog-one__bottom">
+									<a href="blog-details.html">Learn more<i class="fa fa-long-arrow-alt-right"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<!--Blog One End-->
+		<br><br><br>
+
+		<!--Brand One Start-->
+	
+		<!--Site Footer Start-->
+		<footer class="site-footer">
+			<div class="site-footer-bg-1 wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms"
+				style="background-image: url(../static/assets/images/shapes/site-footer-shape-1.png);">
+			</div>
+			<div class="site-footer-bg-2 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms"
+				style="background-image: url(../static/assets/images/shapes/site-footer-shape-2.png);">
+			</div>
+			<div class="site-footer__top">
+				<div class="container">
+					<div class="site-footer__top-inner">
+						<div class="site-footer__top-left">
+							<div class="site-footer__top-icon">
+								<span class="fas fa-robot"></span>
+							</div>
+							<h3 class="site-footer__top-title">Helping you run your bussiness seamlessly</h3>
+						</div>
+						<div class="site-footer__top-right">
+							<a href="{{url_for('about')}}" class="thm-btn site-footer__btn">Discover more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="site-footer__middle">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+							<div class="footer-widget__column footer-widget__about">
+								<div class="footer-widget__logo">
+									<a href="{{url_for('index')}}"><img src="{{ url_for('static', filename='assets/images/logo.png')}}" alt="" width="135" height="50"></a>
+								</div>
+								<div class="footer-widget__about-text-box">
+									<p class="footer-widget__about-text">Log on to get access to our Websites and Softwares</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+							<div class="footer-widget__column footer-widget__links clearfix">
+								<h3 class="footer-widget__title">Links</h3>
+								<ul class="footer-widget__links-list list-unstyled clearfix">
+									<li><a href="{{url_for('about')}}">About us</a></li>
+									<li><a href="{{url_for('about')}}">Meet our team</a></li>
+									
+									<li><a href="{{url_for('services',type='product_development')}}">Our projects</a></li>
+									<li><a href="{{url_for('contact')}}">Contacts</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+							<div class="footer-widget__column footer-widget__contact clearfix">
+								<h3 class="footer-widget__title">Contact</h3>
+								<ul class="footer-widget__contact-list list-unstyled clearfix">
+									<li>
+										<div class="icon">
+											<span class="fas fa-phone"></span>
+										</div>
+										<div class="text">
+											<p><a href="tel:980009850">nbatechofficial@gmail.com</a></p>
+										</div>
+									</li>
+									<li>
+										<div class="icon">
+											<span class=" fas fa-envelope"></span>
+										</div>
+										<div class="text">
+											<p><a href="mailto:nbatechofficial@gmail.com">nbatechofficial@gmail.com</a></p>
+										</div>
+									</li>
+									<li>
+										<div class="icon">
+											<span class="fas fa-map-marker-alt"></span>
+										</div>
+										<div class="text">
+											<p>Coimbatore <br>Tamil Nadu</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+							<div class="footer-widget__column footer-widget__social-box clearfix">
+								<div class="site-footer__social">
+									<a href="#"><i class="fab fa-twitter"></i></a>
+									<a href="#"><i class="fab fa-facebook"></i></a>
+									<a href="#"><i class="fab fa-instagram"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="site-footer__bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="site-footer__bottom-inner">
+								<p class="site-footer__bottom-text">© All Copyright 2024 by <a
+										href="#">NBA Tech Solutions</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--Site Footer End-->
+
+
+	</div><!-- /.page-wrapper -->
+
+
+	<div class="mobile-nav__wrapper">
+		<div class="mobile-nav__overlay mobile-nav__toggler"></div>
+		<!-- /.mobile-nav__overlay -->
+		<div class="mobile-nav__content">
+			<span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+			<div class="logo-box">
+				<a href="{{url_for('index')}}" aria-label="logo image"><img src="{{ url_for('static', filename='assets/images/resources/footer-logo.png')}}"
+						width="155" alt="" /></a>
+			</div>
+			<!-- /.logo-box -->
+			<div class="mobile-nav__container"></div>
+			<!-- /.mobile-nav__container -->
+
+			<ul class="mobile-nav__contact list-unstyled">
+				<li>
+					<i class="fa fa-envelope"></i>
+					<a href="mailto:needhelp@packageName__.com">nbatechofficial@gmail.com</a>
+				</li>
+				<li>
+					<i class="fa fa-phone-alt"></i>
+					<a href="mailto : nbatechofficial@gmail.com">9344269970</a>
+				</li>
+			</ul><!-- /.mobile-nav__contact -->
+			<div class="mobile-nav__top">
+				<div class="mobile-nav__social">
+					<a href="#" class="fab fa-twitter"></a>
+					<a href="#" class="fab fa-facebook-square"></a>
+					<a href="#" class="fab fa-instagram"></a>
+				</div><!-- /.mobile-nav__social -->
+			</div><!-- /.mobile-nav__top -->
+
+
+
+		</div>
+		<!-- /.mobile-nav__content -->
+	</div>
+	<!-- /.mobile-nav__wrapper -->
+
+	<div class="search-popup">
+		<div class="search-popup__overlay search-toggler"></div>
+		<!-- /.search-popup__overlay -->
+		<div class="search-popup__content">
+			<form action="#">
+				<label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+				<input type="text" id="search" placeholder="Search Here..." />
+				<button type="submit" aria-label="search submit" class="thm-btn">
+					<i class="icon-magnifying-glass"></i>
+				</button>
+			</form>
+		</div>
+		<!-- /.search-popup__content -->
+	</div>
+	<!-- /.search-popup -->
+
+	<a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+	<script src="{{ url_for('static', filename='assets/vendors/jquery/jquery-3.6.0.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/jarallax/jarallax.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/jquery-validate/jquery.validate.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/nouislider/nouislider.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/odometer/odometer.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/swiper/swiper.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/tiny-slider/tiny-slider.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/wnumb/wNumb.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/wow/wow.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/isotope/isotope.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/countdown/countdown.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/owl-carousel/owl.carousel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/bxslider/jquery.bxslider.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/bootstrap-select/js/bootstrap-select.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/vegas/vegas.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/jquery-ui/jquery-ui.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/timepicker/timePicker.js') }}"></script>
+	
+	<!-- template js -->
+	<script src="{{ url_for('static', filename='assets/js/notech.js') }}"></script>
+	
+	<!-- toolbar js -->
+	<script src="{{ url_for('static', filename='assets/vendors/toolbar/js/js.cookie.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/toolbar/js/jQuery.style.switcher.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='assets/vendors/toolbar/js/toolbar.js') }}"></script>
+	
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+{
+    "0":{
+        "Type":"Web development integrated with AI",
+        "name":"Skill storm",
+        "images":[
+            "assets/images/project/skill_5.jpeg",
+            "assets/images/project/skill_4.jpeg",
+            "assets/images/project/skill_3.jpeg",
+            "assets/images/project/skill_7.jpeg"
+        ]
+
+    },
+    "1":{
+        "Type":"Web Development",
+        "name":"sitapur nethralaya",
+        "images":[
+            "assets/images/project/sita_2.png",
+            "assets/images/project/sita_3.png",
+            "assets/images/project/sita_4.png",
+            "assets/images/project/sita_5.png"
+        ]
+    },
+    "2":{
+        "Type":"SEO",
+        "name":"Online marketing",
+        "images":[
+            "assets/images/project/sita.png",
+            "assets/images/project/Study(SEO).png"
+        ]
+    },
+    "3":{
+        "Type":"CMS",
+        "name":"Supervisor Dashboard",
+        "images":[
+            "assets/images/project/CMS.jpeg",
+            "assets/images/project/CMS_2.jpeg",
+            "assets/images/project/CMS_3.jpeg",
+            "assets/images/project/CMS_1.jpeg"
+        ]
+    },
+    "4":{
+        "Type":"UI/UX Design",
+        "name":"Figma designs",
+        "images":[
+            "assets/images/project/UI.jpeg",
+            "assets/images/project/UI_1.jpeg",
+            "assets/images/project/UI_2.jpeg"
+        ]
+    },
+    "5":{
+        "Type":"Web development",
+        "name":"Study partner finder",
+        "images":[
+            "assets/images/project/study.png",
+            "assets/images/project/study_2.png",
+            "assets/images/project/study_3.png",
+            "assets/images/project/study_4.png"
+        ]
+    },
+    "6":{
+        "Type":"E-Commerce",
+        "name":"Nayah Foods",
+        "images":[
+            "assets/images/project/prod_3.jpeg",
+            "assets/images/project/prod_2.jpeg",
+            "assets/images/project/prod_1.jpeg"
+        ]
+    },
+    "7":{
+        "Type":"Web development",
+        "name":"Journey Begins",
+        "images":[
+            "assets/images/project/journey_3.jpeg",
+            "assets/images/project/journey_1.jpeg"
+        ]
+    },
+    "8":{
+        "Type":"Web Development",
+        "name":"UF Gaming",
+        "images":[
+            "assets/images/project/gaming.jpeg",
+            "assets/images/project/gaming_1.jpeg",
+            "assets/images/project/gaming_2.jpeg"
+        ]
+    },
+    "9":{
+        "Type":"Software",
+        "name":"Quant Copier",
+        "images":[
+            "assets/images/project/tg_bot_4.png",
+            "assets/images/project/tg_bot_1.png",
+            "assets/images/project/tg_bot_3.png"
+        ]
+    },
+    "10":{
+        "Type":"Bot Software",
+        "name":"Kijiji Scrap",
+        "images":[
+            "assets/images/project/kijiji_1.png",
+            "assets/images/project/kijiji_2.png"
+        ]
+    },
+    "11":{
+        "Type":"Mobile App",
+        "name":"Bus Book",
+        "images":[
+            "assets/images/project/bus_mob_1.jpeg",
+            "assets/images/project/bus_mob_2.jpeg"
+        ]
+    }
+}
